@@ -1,23 +1,35 @@
 const toponimos = Array.from(document.querySelectorAll(".toponimo"));
-const toponimo_ajuste = document.querySelector("#top-ajuste");
-// for (let i = 0; i < toponimos.length; i++) {
-//   console.log(toponimos[i].innerHTML);
-// }
+const toponimo_display = document.querySelector("#top-display");
+let toponimo_selecionado = document.getElementById("top-s");
+const formulario = document.getElementById("formulario");
 
 /**@param {MouseEvent} event */
-function avaliartoponimo(event) {
+function selecionarToponimo(event) {
   const toponimo_clicado = event.currentTarget.innerHTML;
-  toponimo_ajuste.innerHTML = '"' + toponimo_clicado + '"';
+  toponimo_display.innerHTML = '"' + toponimo_clicado + '"';
+  toponimo_selecionado.value = toponimo_clicado;
+
+  formulario.reset();
 }
 
 if (toponimos) {
   toponimos.forEach((toponimo) =>
-    toponimo.addEventListener("click", avaliartoponimo)
+    toponimo.addEventListener("click", selecionarToponimo)
   );
 }
 
+// const topSelecionado = document.getElementById("toponimo-selecionado");
+// topSelecionado.value = toponimo_clicado;
+
 //____________________________________________________________________
 // TESTES / WIP NOVAS FUNCIONALIDADES
+
+// Seleciona estado da lista de estados
+function selecionarEstado() {
+  var listaEstados = document.getElementById("listaEstados");
+  var estado = document.getElementById("estado");
+  estado.value = listaEstados.value;
+}
 
 // Testando ação quando usuário clica em próxima notícia
 const continuar = document.getElementById("continuar");
@@ -33,18 +45,32 @@ if (continuar) {
 }
 
 // Testando ação quando usuário tecla enter.
-const teste = document.querySelector("#top");
-function testeEnter() {
-  // const teste = document.querySelector("#top");
-  if (teste) {
-    teste.addEventListener("keydown", checkEnter);
-  }
-}
+// const teste = document.getElementById("estado-usuario");
 
-function checkEnter(event) {
-  if (event.keyCode === 13) {
-    console.log("Tecla enter pressionada na caixa");
-    console.log(teste.value);
-  }
-}
+// if (teste) {
+//   teste.addEventListener("keydown", function (event) {
+//     if (event.key === "Enter") {
+//       event.preventDefault();
+//       console.log("Tecla enter pressionada na caixa");
+//       console.log(teste.value);
+//     }
+//   });
+// }
+
+//
+
+// function testeEnter() {
+//   // const teste = document.querySelector("#top");
+//   if (teste) {
+//     teste.addEventListener("keydown", checkEnter);
+//   }
+// }
+
+// function checkEnter(event) {
+//   if (event.keyCode === 13) {
+//     console.log("Tecla enter pressionada na caixa");
+//     console.log(teste.value);
+//     event.preventDefault();
+//   }
+// }
 //____________________________________________________________________

@@ -48,10 +48,21 @@ h1 {
   text-align: center;
 }
 
-#top-ajuste {
+#top-display {
   display: inline-block;
   text-align: center;
   background-color: lightcyan;
   border-radius: 8px;
   padding: 6px;
+}
+
+#submit {
+  margin: 10px;
+  background-color: lightgreen;
+}
+
+#pergunta-1,
+#pergunta-2,
+#pergunta-3 {
+  padding: 10px 0px;
 }
