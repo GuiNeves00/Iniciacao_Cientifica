@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title> Avaliar </title>
+</head>
+
+<body>
+    <h1>Avaliar</h1>
+    <div class="rodape">
+        <h2>Notícia</h2>
+        <h2>Ajustes</h2>
+    </div>
+    <div class="avaliar">
+        <div class="noticia">
+            <p>{{texto | safe}}
+            </p>
+        </div>
+        <div class="sidebar">
+            <div class="centralizar">
+                <h3 id="top-ajuste">Testando</h3>
+            </div>
+            <p>Esta palavra é um topônimo?</p>
+            <button>Sim</button> <button>Não</button> <button>Não sei</button>
+            <p>Caso tenha respondido <strong>"Sim"</strong> acima, em qual estado ficado este topônimo? Caso contrário,
+                ignore esta
+                pergunta!
+            </p>
+            <input type="text" name="toponimo-usuario" id="top" placeholder="Minas Gerais" onkeydown="testeEnter()">
+            <p>Pergunta</p>
+            <button>1</button> <button>2</button> <button>3</button>
+            <p>Pergunta</p>
+            <button>1</button> <button>2</button> <button>3</button>
+            <p>Pergunta</p>
+            <button>1</button> <button>2</button> <button>3</button>
+        </div>
+
+    </div>
+    <div id="continuar-sair">
+        <button id="continuar">Próxima Notícia</button>
+        <a href="/"><button>Sair</button></a>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

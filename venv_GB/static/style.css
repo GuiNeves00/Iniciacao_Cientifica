@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 25px;
+  display: grid;
+  background-color: #c6c6c6;
+}
+
+h1 {
+  text-align: center;
+}
+
+.rodape {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  place-items: center;
+}
+
+.avaliar {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+.noticia {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border: 2px solid seagreen;
+  border-radius: 6px;
+}
+
+.sidebar {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border-radius: 6px;
+  border: 2px solid blue;
+}
+
+.toponimo {
+  /* text-decoration: none; */
+  color: blue;
+}
+
+.centralizar {
+  text-align: center;
+}
+
+#top-ajuste {
+  display: inline-block;
+  text-align: center;
+  background-color: lightcyan;
+  border-radius: 8px;
+  padding: 6px;
+}
