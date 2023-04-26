@@ -19,8 +19,8 @@ def evaluate():
         formData['pergunta-1'] = pergunta1
         pergunta2 = request.form['pergunta-2']
         formData['pergunta-2'] = pergunta2
-        perguntax = request.form['pergunta-3']
-        formData['pergunta-3'] = perguntax
+        pergunta3 = request.form['pergunta-3']
+        formData['pergunta-3'] = pergunta3
         
         return redirect(url_for('output'))
     else:

@@ -48,12 +48,10 @@ const teste = document.getElementById("novo-toponimo");
 function handleEnter(event) {
   if (event.key === "Enter") {
     event.preventDefault();
-    console.log("Tecla enter pressionada na caixa");
-    console.log(teste.value);
     toponimo_selecionado.value = teste.value;
-    toponimo_display.innerHTML = teste.value;
-    console.log("att = ", toponimo_selecionado.value);
+    toponimo_display.innerHTML = '"' + teste.value + '"';
     teste.value = ""; //limpa caixa de texto
+    formulario.reset();
   }
 }
 
