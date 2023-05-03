@@ -1,20 +1,19 @@
 let testejson = {
+  metadados: "teste",
   id: 0,
+  titulo: "Uma notícia sobre o interior de Minas Gerais",
+  subtitulo: "Saiba mais sobre João Monlevade",
   texto: "João Monlevade fica em Minas Gerais, perto de Nova Era.",
   toponimosGP: ["João Monlevade", "Minas Gerais", "em"],
-  toponimosUsuario: {
-    nomeToponimo: ["João Monlevade", "em", "Minas Gerais", "Nova Era"],
-    isToponimo: [true, false, true, true],
-    tipoToponimo: ["Cidade", "null", "Estado", "Cidade"],
-    estadoToponimo: ["MG", "null", "MG", "MG"],
-  },
+  contribuicoes: [
+    ["João Monlevade", "Toponimo", "Cidade", "MG", 10],
+    ["em", "Palavra", null, null, 5],
+    ["Minas Gerais", "Toponimo", "Estado", "MG", 20],
+    ["Nova Era", "Toponimo", "Cidade", "MG", 10],
+  ],
+  totalContribuicoes: 45,
 };
 
 console.log(testejson);
 console.log("________________________________________________");
-console.log(
-  testejson.toponimosUsuario.nomeToponimo[0],
-  testejson.toponimosUsuario.isToponimo[0],
-  testejson.toponimosUsuario.tipoToponimo[0],
-  testejson.toponimosUsuario.estadoToponimo[0]
-);
+console.log(testejson.contribuicoes[0]);
