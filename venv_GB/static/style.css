@@ -77,7 +77,7 @@ input:hover {
   padding: 15px;
   border-radius: 8px;
   margin: 10px;
-  background-color: lightgreen;
+  background-color: lightgray;
 }
 
 #pergunta-1,
@@ -85,6 +85,19 @@ input:hover {
 #pergunta-3 {
   padding: 10px 0px;
 }
+
+/* perguntas escondidas por padrao,
+apos usuario responder a antecedente
+a proxima ira aparecer */
+#pergunta-2,
+#pergunta-3,
+#pergunta-1 {
+  display: none;
+}
+
+/* #submit {
+  display: none;
+} */
 
 #novo-toponimo-div {
   background-color: aqua;

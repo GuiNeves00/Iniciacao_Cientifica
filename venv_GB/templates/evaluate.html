@@ -27,23 +27,24 @@
                     <h3 id="top-display">Testando</h3>
                 </div>
 
+                <!-- TODO 'consertar' as labels (id e for) -->
                 <div id="pergunta-1">
-                    <label for="pergunta-1">
+                    <label for="pergunta1-resp-sim">
                         <strong>Esta palavra é um topônimo?</strong>
                     </label>
                     <br>
-                    <input type="radio" id="sim" name="pergunta-1" value="sim">
+                    <input type="radio" id="pergunta1-resp-sim" name="pergunta-1" value="sim">
                     <label for="sim">Sim</label>
-                    <input type="radio" id="nao" name="pergunta-1" value="nao">
+                    <input type="radio" id="pergunta1-resp-nao" name="pergunta-1" value="nao">
                     <label for="nao">Não</label>
-                    <input type="radio" id="nao-sei" name="pergunta-1" value="nao-sei">
+                    <input type="radio" id="pergunta1-resp-nao-sei" name="pergunta-1" value="nao-sei">
                     <label for="nao-sei">Não sei</label>
                 </div>
 
                 <div id="pergunta-2">
-                    <label for="tipo"><strong>Qual o tipo deste topônimo?</strong></label>
+                    <label for="pergunta2-respostas"><strong>Qual o tipo deste topônimo?</strong></label>
                     <br>
-                    <select id="tipo" name="pergunta-2" onchange="selecionarTipo()">
+                    <select id="pergunta2-respostas" name="pergunta-2" onchange="selecionarTipo()">
                         <option value="">Selecione uma opção</option>
                         <option value="zona">Zona</option>
                         <option value="continente">Continente</option>
@@ -58,7 +59,7 @@
                 </div>
 
                 <div id="pergunta-3">
-                    <label for="estado">
+                    <label for="pergunta3-respostas">
                         <strong>A qual estado este topônimo pertence?</strong>
                     </label>
                     <br>
@@ -92,11 +93,11 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                     </select>
-                    <input type="text" id="estado" name="pergunta-3" readonly>
+                    <input type="text" id="pergunta3-respostas" name="pergunta-3" readonly>
                 </div>
 
                 <div class="centralizar">
-                    <input type="submit" name="enviar" id="submit" value="Enviar">
+                    <input type="submit" name="enviar" id="submit" value="Enviar" disabled>
                 </div>
 
                 <div id="novo-toponimo-div">
