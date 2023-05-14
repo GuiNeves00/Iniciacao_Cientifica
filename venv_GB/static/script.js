@@ -25,6 +25,12 @@ function selecionarEstado() {
   estado.value = listaEstados.value;
 }
 
+// Seleciona tipo de toponimo da lista de tipos
+function selecionarTipo() {
+  var tipo = document.getElementById("tipo").value;
+  document.getElementById("tipo-selecionado").value = tipo;
+}
+
 //____________________________________________________________________
 // TESTES / WIP NOVAS FUNCIONALIDADES
 

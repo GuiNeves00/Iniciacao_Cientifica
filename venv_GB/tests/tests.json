@@ -1,18 +1,60 @@
+
+
+
 {
-  "metadados": "teste",
-  "id": 0,
-  "titulo": "Uma notícia sobre o interior de Minas Gerais",
-  "subtitulo": "Saiba mais sobre João Monlevade",
-  "texto": "João Monlevade fica em Minas Gerais, perto de Nova Era.",
-  "toponimosGP": ["João Monlevade", "Minas Gerais", "em"],
-  "contribuicoes": [
-    ["João Monlevade", "Toponimo", "Cidade", "MG", 10],
-    ["em", "Palavra", null, null, 5],
-    ["Minas Gerais", "Toponimo", "Estado", "MG", 20],
-    ["Nova Era", "Toponimo", "Cidade", "MG", 10]
+  "metadados": "wip",
+  "url": "noticia.com/ex-noticia",
+  "data": "04/05/2023",
+  "hora": "14:00",
+  "id": 1,
+  "titulo": "Crianças autistas participam de sessão de terapia com cães do Bope em Macapá",
+  "subtitulo": "Ação foi realizada na manhã desta sexta-feira (28). Segundo o Creap, atividade chamada de cinoterapia promove diversos benefícios, como saúde física e mental dos pacientes.",
+  "texto": "Crianças autistas receberam nesta sexta-feira (28) uma atividade terapêutica com cães do Batalhão de Operações Especiais (Bope) da Polícia Militar (PM) do Amapá.
+  A iniciativa ocorreu no Canil do Bope. O local fica situado no Comando Geral da PM, no bairro do Beirol, na Zona Sul de Macapá.
+  Segundo Mário Coimbra, coordenador de reabilitação do Creap, a atividade chamada de cinoterapia promove diversos benefícios, como a saúde física e mental dos pacientes.
+  'Os benefícios se dão através do contato e a troca de afeto; o prazer de rir brincar com um animal a sensação de bem-estar e conforto e, principalmente para a criança com autismo, os estímulos sensoriais físicos e emocionais que vão auxiliar na terapêutica que ele já realiza no Creap diariamente', disse o coordenador.
+  Além de atender crianças com autismo, o evento ainda contou com a participação da pequena Daniela, que tem 1 ano de idade e é portadora da Síndrome de Down. A mãe dela, a fonoaudióloga Valquíria Câmara, falou sobre a importância do momento.
+  'O projeto, ele é muito importante porque ele traz é uma vivência diferente, né? E assim, você entra em contato com animais e isso estimula muito a criança, no desenvolvimento geral dela [...] é um momento que essas crianças dão o melhor de si', disse Daniela.
+  A ação faz parte do projeto Melhor Amigo, que iniciou em 2019, mas teve de ser interrompido no ano seguinte por conta da pandemia de Covid-19.
+  Após o fim das medidas restritivas, a cinoterapia com as crianças autistas retornou em 2023. Segundo Lino Medeiros, capitão do canil do Bope, a ideia é que a prática volte a ocorrer mais vezes este ano, mas a frequência será definida pelos profissionais de saúde.
+  As atividades desta sexta foram realizadas em conjunto entre o Creap e o Bope.
+  Veja o plantão de últimas notícias do g1 Amapá",
+  "spacy": ["Bope", "Macapá", "Creap", "Bope", "Polícia Militar", "PM", "Amapá", "Canil do Bope", "Comando Geral da PM", "Beirol", "Zona Sul", "Macapá", "Creap", "Creap", "Covid-19", "Bope", "Creap", "Bope", "Amapá"],
+  "contribuicoes":[
+    ["Bope", "N", null, null, 10],
+    ["Macapá", "S", "Cidade", "Amapá", 10],
+    ["Creap", "N", null, null, 10],
+    ["Polícia Militar", "N", null, null, 10],
+    ["PM", "N", null, null, 10],
+    ["Amapá", "S", "Estado", "Amapá", 9],
+    ["Amapá", "S", "Cidade", "Amapá", 1],
+    ["Canil do Bope", "N", null, null, 10],
+    ["Comando Geral da PM", "S", "Bairro", "Rio de Janeiro", 2],
+    ["Comando Geral da PM", "N", null, null, 8],
+    ["Beirol", "S", "Bairro", "Amapá", 10],
+    ["Zona Sul", "S", "Zona", null, 5],
+    ["Zona Sul", "N", null, null, 5],
+    ["Mário Coimbra", "S", "Rua", "São Paulo", 1]
   ],
-  "totalContribuicoes": 45
+  "totalContribuicoes": 10
 }
+
+// {
+//   "metadados": "teste",
+//   "id": 0,
+//   "titulo": "Uma notícia sobre o interior de Minas Gerais",
+//   "subtitulo": "Saiba mais sobre João Monlevade",
+//   "texto": "João Monlevade fica em Minas Gerais, perto de Nova Era.",
+//   "toponimosGP": ["João Monlevade", "Minas Gerais", "em"],
+//   "contribuicoes": [
+//     ["João Monlevade", "Toponimo", "Cidade", "MG", 10],
+//     ["em", "Palavra", null, null, 5],
+//     ["Minas Gerais", "Toponimo", "Estado", "MG", 20],
+//     ["Nova Era", "Toponimo", "Cidade", "MG", 10]
+//   ],
+//   "totalContribuicoes": 45
+// }
+
 
 // {
 //   "id": 0,

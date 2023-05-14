@@ -26,6 +26,7 @@
                     <input type="hidden" id="top-s" name="top-selecionado" value="teste-value">
                     <h3 id="top-display">Testando</h3>
                 </div>
+
                 <div id="pergunta-1">
                     <label for="pergunta-1">
                         <strong>Esta palavra é um topônimo?</strong>
@@ -38,27 +39,24 @@
                     <input type="radio" id="nao-sei" name="pergunta-1" value="nao-sei">
                     <label for="nao-sei">Não sei</label>
                 </div>
+
                 <div id="pergunta-2">
-                    <label for="pergunta-2"><strong>Qual o tipo deste topônimo?</strong></label>
+                    <label for="tipo"><strong>Qual o tipo deste topônimo?</strong></label>
                     <br>
-                    <input type="radio" id="zona" name="pergunta-2" value="zona">
-                    <label for="zona">Zona</label>
-                    <input type="radio" id="continente" name="pergunta-2" value="continente">
-                    <label for="continente">Continente</label>
-                    <input type="radio" id="país" name="pergunta-2" value="país">
-                    <label for="país">País</label>
-                    <input type="radio" id="unidade-federativa" name="pergunta-2" value="unidade-federativa">
-                    <label for="unidade-federativa">Estado</label>
-                    <br>
-                    <input type="radio" id="cidade" name="pergunta-2" value="cidade">
-                    <label for="cidade">Cidade</label>
-                    <input type="radio" id="bairro" name="pergunta-2" value="bairro">
-                    <label for="bairro">Bairro</label>
-                    <input type="radio" id="rua" name="pergunta-2" value="rua">
-                    <label for="rua">Rua</label>
-                    <input type="radio" id="outro" name="pergunta-2" value="outro">
-                    <label for="outro">Outro</label>
+                    <select id="tipo" name="pergunta-2" onchange="selecionarTipo()">
+                        <option value="">Selecione uma opção</option>
+                        <option value="zona">Zona</option>
+                        <option value="continente">Continente</option>
+                        <option value="país">País</option>
+                        <option value="unidade-federativa">Estado</option>
+                        <option value="cidade">Cidade</option>
+                        <option value="bairro">Bairro</option>
+                        <option value="rua">Rua</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <input type="text" id="tipo-selecionado" name="tipo-selecionado" readonly>
                 </div>
+
                 <div id="pergunta-3">
                     <label for="estado">
                         <strong>A qual estado este topônimo pertence?</strong>
@@ -96,14 +94,17 @@
                     </select>
                     <input type="text" id="estado" name="pergunta-3" readonly>
                 </div>
+
                 <div class="centralizar">
                     <input type="submit" name="enviar" id="submit" value="Enviar">
                 </div>
+
                 <div id="novo-toponimo-div">
                     <label for="novo-toponimo"><strong>Adicionar Topônimo Não Identificado:</strong></label>
                     <br>
                     <input type="text" id="novo-toponimo">
                 </div>
+
             </form>
         </div>
 
