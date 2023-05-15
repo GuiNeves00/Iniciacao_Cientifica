@@ -22,9 +22,12 @@ def evaluate():
         pergunta3 = request.form['pergunta-3']
         formData['pergunta-3'] = pergunta3
         
+
+
         return redirect(url_for('output'))
     else:
         links = scrap.obtem_links_g1()
+        pubdates = scrap.obtem_pubdate_g1()
         textos = scrap.obtem_textos_g1(links)
         toponimos = geoparsing.geoparsing_spacy(textos[1])
         txt_exibir = geoparsing.processar_txt(textos[1], toponimos)

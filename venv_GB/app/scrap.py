@@ -14,10 +14,27 @@ def obtem_links_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
     rss_bs = bs(rss.content, features="lxml") #features="lxml"
 
     # Obtem os links das noticias
-    for news in rss_bs.find_all("guid"):
-        links_noticias.append(news.get_text())
+    for link in rss_bs.find_all("guid"):
+        links_noticias.append(link.get_text())
     
+    # Escreve no JSON o url de cada noticia
+    escrever_JSON(urls=links_noticias)
     return links_noticias
+
+def obtem_pubdate_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
+    # Cria lista, e obtem o conteudo da pagina RSS
+    pubdates = []
+    rss = requests.get(rss_link)
+    rss_bs = bs(rss.content, features="lxml") #features="lxml"
+
+    ids = 0 # utilizado para buscar o id correspondende no JSON
+    # obtem pubdate das noticias e escreve no JSON
+    for pubdate in rss_bs.find_all("pubdate"):
+        escrever_JSON(id=ids, pubdates=pubdate.get_text())
+        ids += 1
+        pubdates.append(pubdate.get_text())
+
+    return pubdates
 
 def obtem_textos_g1(links_noticias):
     """Obtem os TEXTOS de TODAS as noticias presentes no RSS do G1.
@@ -52,23 +69,68 @@ def obtem_textos_g1(links_noticias):
                                             # em um unico texto
 
         textos.append(blob)     # adiciona texto inteiro de uma noticia a lista textos
-
-    salvar_texto_json(textos)
+    #FIXME nao esta salvando as novas noticias do rss
+    # salvar_texto_json(textos)
 
     return textos
 
-def salvar_texto_json(textos):
-    noticias = []
+
+def escrever_JSON(id="", urls="", pubdates="", titulos="", subtitulos="", textos=""):
     try:
-        with open('noticias.json', 'r') as f:
-            noticias = json.load(f)
+        with open('app/data.json', 'r') as dataJSON:
+            arquivo = json.load(dataJSON)
     except (FileNotFoundError, json.JSONDecodeError):
-        pass
+        arquivo = []
+    
+    # Cria o id para cada noticia e escreve o url de cada
+    if urls != "":
+        for link in urls:
+            if not any(arq["url"] == link for arq in arquivo):
+                obj = {
+                    "id": len(arquivo),
+                    "url": link,
+                    "pubdate": pubdates,
+                    "titulo": titulos,
+                    "subtitulo": subtitulos,
+                    "texto": textos
+                }
+                arquivo.append(obj)
+    
+    # Escreve as pubdates
+    if pubdates != "":
+        teste = encontrar_objeto_por_id(id, arquivo)
+        if teste:
+            teste['pubdate'] = pubdates
+    
+    # Escreve os dados
+    with open('app/data.json', 'w') as f:
+        json.dump(arquivo, f, indent=4, ensure_ascii=False)
 
-    for i, texto in enumerate(textos):
-        nova_noticia = {"id": i, "texto": texto}
-        if not any(noticia["id"] == i for noticia in noticias):
-            noticias.append(nova_noticia)
+    return
 
-    with open('noticias.json', 'w') as f:
-        json.dump(noticias, f, indent=4, ensure_ascii=False)
+# Percorre o arquivo JSON ate encontrar o objeto com id
+# passado por parametro, retornando-o
+def encontrar_objeto_por_id(id, data):
+    for objeto in data:
+        if objeto['id'] == id:
+            return objeto
+    return None
+    
+
+
+#FIXME nao esta salvando as novas noticias do rss
+# def salvar_texto_json(textos):
+#     noticias = []
+#     try:
+#         with open('noticias.json', 'r') as f:
+#             noticias = json.load(f)
+#     except (FileNotFoundError, json.JSONDecodeError):
+#         pass
+
+#     for i, texto in enumerate(textos):
+#         nova_noticia = {"id": i, "texto": texto}
+#         if not any(noticia["id"] == i for noticia in noticias):
+#             noticias.append(nova_noticia)
+
+#     with open('noticias.json', 'w') as f:
+#         json.dump(noticias, f, indent=4, ensure_ascii=False)

@@ -1,12 +1,8 @@
-
-
-
 {
+  "id": 1,
   "metadados": "wip",
   "url": "noticia.com/ex-noticia",
-  "data": "04/05/2023",
-  "hora": "14:00",
-  "id": 1,
+  "pubdate": "Wed, 03 May 2023 13:33:00 -0000",
   "titulo": "Crianças autistas participam de sessão de terapia com cães do Bope em Macapá",
   "subtitulo": "Ação foi realizada na manhã desta sexta-feira (28). Segundo o Creap, atividade chamada de cinoterapia promove diversos benefícios, como saúde física e mental dos pacientes.",
   "texto": "Crianças autistas receberam nesta sexta-feira (28) uma atividade terapêutica com cães do Batalhão de Operações Especiais (Bope) da Polícia Militar (PM) do Amapá.
