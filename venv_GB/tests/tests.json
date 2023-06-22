@@ -57,9 +57,9 @@
       },
       { //palavra 2
         "Palavra": "João Monlevade",
-        "Toponimo": false,
-        "Tipo": null,
-        "Localizacao": "MG"
+        "Toponimo": true,
+        "Tipo": "Cidade",
+        "Localizacao": null
       },
       { //palavra 3
         "Palavra": "Mariana",
