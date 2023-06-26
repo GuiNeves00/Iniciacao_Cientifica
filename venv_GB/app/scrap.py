@@ -18,7 +18,7 @@ def obtem_links_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
         links_noticias.append(link.get_text())
     
     # Escreve no JSON o url de cada noticia
-    escrever_JSON(urls=links_noticias)
+    # escrever_JSON(urls=links_noticias)
     return links_noticias
 
 def obtem_pubdate_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
@@ -30,7 +30,7 @@ def obtem_pubdate_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
     ids = 0 # utilizado para buscar o id correspondende no JSON
     # obtem pubdate das noticias e escreve no JSON
     for pubdate in rss_bs.find_all("pubdate"):
-        escrever_JSON(id=ids, pubdates=pubdate.get_text())
+        # escrever_JSON(id=ids, pubdates=pubdate.get_text())
         ids += 1
         pubdates.append(pubdate.get_text())
 
@@ -75,47 +75,70 @@ def obtem_textos_g1(links_noticias):
     return textos
 
 
-def escrever_JSON(id="", urls="", pubdates="", titulos="", subtitulos="", textos=""):
-    try:
-        with open('app/data.json', 'r') as dataJSON:
-            arquivo = json.load(dataJSON)
-    except (FileNotFoundError, json.JSONDecodeError):
-        arquivo = []
-    
-    # Cria o id para cada noticia e escreve o url de cada
-    if urls != "":
-        for link in urls:
-            if not any(arq["url"] == link for arq in arquivo):
-                obj = {
-                    "id": len(arquivo),
-                    "url": link,
-                    "pubdate": pubdates,
-                    "titulo": titulos,
-                    "subtitulo": subtitulos,
-                    "texto": textos
-                }
-                arquivo.append(obj)
-    
-    # Escreve as pubdates
-    if pubdates != "":
-        teste = encontrar_objeto_por_id(id, arquivo)
-        if teste:
-            teste['pubdate'] = pubdates
-    
-    # Escreve os dados
-    with open('app/data.json', 'w') as f:
-        json.dump(arquivo, f, indent=4, ensure_ascii=False)
+#TODO: essa abordagem tem um problema. quando executar a "rotina" as variaveis usadas para nomear o arquivo vao ser resetadas, assim impedindo de criar novos arquvios.
+    #Brainstorm de consertos:
+        # Adicionar ao BD ao final desta função. Assim sendo necessário, no momento da adição, atribuir um identificador para a notícia, que será usado para verificar em futuras adições se esta noticia já não está presente no BD.
+def gerar_JSONL():
+    links = obtem_links_g1()
+    pubdates = obtem_pubdate_g1()
+    textos = obtem_textos_g1(links)
+   
+    for i, (link, pubdate, texto) in enumerate(zip(links, pubdates, textos), 1):
+        dados = {"url": link, "pubdate": pubdate, "titulo": i, "subtitulo": i, "texto": texto, "NLP": i, "contribuicoes": i}
+        nome_arquivo = f"/home/guilherme/VSC/IC/GeoBases/venv_GB/app/noticias/noticiaG1_{i}.jsonl"
 
-    return
+        if not os.path.exists(nome_arquivo):
+            with open(nome_arquivo, 'w') as arquivo:
+                json.dump(dados, arquivo, ensure_ascii=False)
+                arquivo.write('\n')
 
-# Percorre o arquivo JSON ate encontrar o objeto com id
-# passado por parametro, retornando-o
-def encontrar_objeto_por_id(id, data):
-    for objeto in data:
-        if objeto['id'] == id:
-            return objeto
-    return None
+#TODO: Algma condição deve ser satisfeita para que a função seja executada. Acredito que terá algo haver com "rotina"
+if True:
+    gerar_JSONL()                
+
+
+# def escrever_JSON(id="", urls="", pubdates="", titulos="", subtitulos="", textos=""):
+#     try:
+#         with open('app/data.json', 'r') as dataJSON:
+#             arquivo = json.load(dataJSON)
+#     except (FileNotFoundError, json.JSONDecodeError):
+#         arquivo = []
     
+#     # Cria o id para cada noticia e escreve o url de cada
+#     if urls != "":
+#         for link in urls:
+#             if not any(arq["url"] == link for arq in arquivo):
+#                 obj = {
+#                     "id": len(arquivo),
+#                     "url": link,
+#                     "pubdate": pubdates,
+#                     "titulo": titulos,
+#                     "subtitulo": subtitulos,
+#                     "texto": textos
+#                 }
+#                 arquivo.append(obj)
+    
+#     # Escreve as pubdates
+#     if pubdates != "":
+#         teste = encontrar_objeto_por_id(id, arquivo)
+#         if teste:
+#             teste['pubdate'] = pubdates
+    
+#     # Escreve os dados
+#     with open('app/data.json', 'w') as f:
+#         json.dump(arquivo, f, indent=4, ensure_ascii=False)
+
+#     return
+
+# # Percorre o arquivo JSON ate encontrar o objeto com id
+# # passado por parametro, retornando-o
+# def encontrar_objeto_por_id(id, data):
+#     for objeto in data:
+#         if objeto['id'] == id:
+#             return objeto
+#     return None
+    
+
 
 
 #FIXME nao esta salvando as novas noticias do rss
