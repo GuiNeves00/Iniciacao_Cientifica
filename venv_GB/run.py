@@ -1,7 +1,13 @@
 from flask import Flask, redirect, request, render_template, url_for
-from app import scrap, geoparsing
+from app import geoparsing
+from database.database import Database
+from pathlib import Path
 
 app = Flask(__name__, static_url_path='/static')
+
+#TODO checar se ja existe a instancia (scrap.py linha 79)
+db_path = Path(__file__).resolve().parent / 'database' / 'db.json'
+db = Database(db_path)
 
 formData = {}
 
@@ -26,11 +32,17 @@ def evaluate():
 
         return redirect(url_for('output'))
     else:
-        links = scrap.obtem_links_g1()
-        pubdates = scrap.obtem_pubdate_g1()
-        textos = scrap.obtem_textos_g1(links)
-        toponimos = geoparsing.geoparsing_spacy(textos[1])
-        txt_exibir = geoparsing.processar_txt(textos[1], toponimos)
+
+        noticia = db.get_data(3)
+        texto_noticia = noticia['texto']
+
+        # links = scrap.obtem_links_g1()
+        # pubdates = scrap.obtem_pubdate_g1()
+        # textos = scrap.obtem_textos_g1(links)
+
+        toponimos = geoparsing.geoparsing_spacy(texto_noticia)
+        txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
+        
         return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos)
 
 @app.route('/output')

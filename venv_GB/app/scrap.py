@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup as bs
 import json
 import os
+from database.database import Database
+from pathlib import Path
 
 def obtem_links_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
     """Obtem os LINKS das noticias do RSS do G1
@@ -74,27 +76,44 @@ def obtem_textos_g1(links_noticias):
 
     return textos
 
+#TODO a ideia é criar uma "rotina" que vai executar este arquivo scrap.py a cada X tempo. Tenho que verificar se existe a necessidade de criar uma verificação aqui que verifique se já existe uma instância do BD, se sim, não instanciar novamente (db=Database(db_path)). Cogitar fazer essa verificação com uma simples 'flag'. No momento, (acreidto que) estou apenas sobrescrevendo a instância, não sei se isso pode acarretar em um problema.
+db_path = Path(__file__).resolve().parent.parent / 'database' / 'db.json'
+db = Database(db_path)
+
+links_noticias = obtem_links_g1()
+db.populate_DB(links_noticias, obtem_pubdate_g1(), obtem_textos_g1(links_noticias))
+
+# db = database.createDB()
+# database.populate_DB(db)
 
 #TODO: essa abordagem tem um problema. quando executar a "rotina" as variaveis usadas para nomear o arquivo vao ser resetadas, assim impedindo de criar novos arquvios.
     #Brainstorm de consertos:
         # Adicionar ao BD ao final desta função. Assim sendo necessário, no momento da adição, atribuir um identificador para a notícia, que será usado para verificar em futuras adições se esta noticia já não está presente no BD.
-def gerar_JSONL():
-    links = obtem_links_g1()
-    pubdates = obtem_pubdate_g1()
-    textos = obtem_textos_g1(links)
+# def gerar_JSON():
+#     links = obtem_links_g1()
+#     pubdates = obtem_pubdate_g1()
+#     textos = obtem_textos_g1(links)
    
-    for i, (link, pubdate, texto) in enumerate(zip(links, pubdates, textos), 1):
-        dados = {"url": link, "pubdate": pubdate, "titulo": i, "subtitulo": i, "texto": texto, "NLP": i, "contribuicoes": i}
-        nome_arquivo = f"/home/guilherme/VSC/IC/GeoBases/venv_GB/app/noticias/noticiaG1_{i}.jsonl"
+#     for i, (link, pubdate, texto) in enumerate(zip(links, pubdates, textos), 1):
+#         dados = {
+#             "url": link,
+#             "pubdate": pubdate,
+#             "titulo": i,
+#             "subtitulo": i,
+#             "texto": texto,
+#             "NLP": i,
+#             "contribuicoes": i
+#         }
+#         nome_arquivo = f"/home/guilherme/VSC/IC/GeoBases/venv_GB/app/noticias/noticiaG1_{i}.json"
 
-        if not os.path.exists(nome_arquivo):
-            with open(nome_arquivo, 'w') as arquivo:
-                json.dump(dados, arquivo, ensure_ascii=False)
-                arquivo.write('\n')
+#         if not os.path.exists(nome_arquivo):
+#             with open(nome_arquivo, 'w') as arquivo:
+#                 json.dump(dados, arquivo, ensure_ascii=False, indent=4)
 
-#TODO: Algma condição deve ser satisfeita para que a função seja executada. Acredito que terá algo haver com "rotina"
-if True:
-    gerar_JSONL()                
+
+# #TODO: Algma condição deve ser satisfeita para que a função seja executada. Acredito que terá algo haver com "rotina"
+# if True:
+#     gerar_JSON()                
 
 
 # def escrever_JSON(id="", urls="", pubdates="", titulos="", subtitulos="", textos=""):
