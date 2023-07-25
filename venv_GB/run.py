@@ -53,7 +53,7 @@ def evaluate():
         
     return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos)
 
-@app.route('/submit-form', methods=['POST', 'GET'])
+@app.route('/submit-form', methods=['POST'])
 def submit_form():
     dados = request.get_json()
 
@@ -65,13 +65,18 @@ def submit_form():
 
     # Adiciona as novas respostas do usuário aos dados existentes
     for resposta in dados:
-        ordered_resposta = [('top-selecionado', resposta['top-selecionado'])] + [(key, resposta[key]) for key in sorted(resposta.keys()) if key != 'top-selecionado']
-        existing_data.append(dict(ordered_resposta))
-    
+        # Renomeia os atributos conforme desejado
+        resposta_renomeada = OrderedDict()
+        resposta_renomeada["palavra"] = resposta["palavra"]  # Ajustado para "palavra"
+        resposta_renomeada["is_toponimo"] = resposta["is_toponimo"]
+        resposta_renomeada["tipo"] = resposta["tipo"]
+        resposta_renomeada["localizacao"] = resposta["localizacao"]
+        existing_data.append(resposta_renomeada)
 
     # Salva o array atualizado no arquivo JSON (temp.json)
     with open(temp_path, 'w', encoding='utf-8') as arq:
         json.dump(existing_data, arq, ensure_ascii=False, indent=4)
+    
     return 'Respostas Salvas com Sucesso!'
 
 @app.route('/load-data', methods=['GET'])

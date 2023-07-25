@@ -1,8 +1,32 @@
 [
     {
-        "top-selecionado": "Macapá",
-        "pergunta-1": "sim",
-        "pergunta-2": "cidade",
-        "pergunta-3": "AP"
+        "palavra": "Macapá",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "AP"
+    },
+    {
+        "palavra": "Canil do Bope",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Macapá",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "AP"
+    },
+    {
+        "palavra": "Zona Sul",
+        "is_toponimo": "sim",
+        "tipo": "zona",
+        "localizacao": "AC"
+    },
+    {
+        "palavra": "Creap",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
     }
 ]

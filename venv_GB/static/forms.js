@@ -11,7 +11,22 @@ document
 
     // Converte os dados do formulário para JSON
     for (var [key, value] of formData.entries()) {
-      respostasUsuario[key] = value;
+      switch (key) {
+        case "top-selecionado":
+          respostasUsuario["palavra"] = value;
+          break;
+        case "pergunta-1":
+          respostasUsuario["is_toponimo"] = value;
+          break;
+        case "pergunta-2":
+          respostasUsuario["tipo"] = value;
+          break;
+        case "pergunta-3":
+          respostasUsuario["localizacao"] = value;
+          break;
+        default:
+          respostasUsuario[key] = value;
+      }
     }
 
     console.log(respostasUsuario); // Verifique se as respostas do usuário estão corretas
