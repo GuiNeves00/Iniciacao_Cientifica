@@ -68,16 +68,34 @@ def submit_form():
         # Renomeia os atributos conforme desejado
         resposta_renomeada = OrderedDict()
         resposta_renomeada["palavra"] = resposta["palavra"]  # Ajustado para "palavra"
-        resposta_renomeada["is_toponimo"] = resposta["is_toponimo"]
-        resposta_renomeada["tipo"] = resposta["tipo"]
-        resposta_renomeada["localizacao"] = resposta["localizacao"]
+        
+        # Ajusta o valor do atributo "is_toponimo" para booleano, se já não for
+        if isinstance(resposta["is_toponimo"], str):
+            resposta_renomeada["is_toponimo"] = resposta["is_toponimo"].lower() == "sim"
+        else:
+            resposta_renomeada["is_toponimo"] = resposta["is_toponimo"]
+
+        # Ajusta o valor do atributo "tipo" para null, se vazio
+        resposta_renomeada["tipo"] = resposta["tipo"] if resposta["tipo"] != "" else None
+
+        # Ajusta o valor do atributo "localizacao" para null, se vazio
+        resposta_renomeada["localizacao"] = resposta["localizacao"] if resposta["localizacao"] != "" else None
+
+        # Se o atributo "is_toponimo" for false, também ajusta os atributos "tipo" e "localizacao" para null
+        if not resposta_renomeada["is_toponimo"]:
+            resposta_renomeada["tipo"] = None
+            resposta_renomeada["localizacao"] = None
+
         existing_data.append(resposta_renomeada)
 
     # Salva o array atualizado no arquivo JSON (temp.json)
     with open(temp_path, 'w', encoding='utf-8') as arq:
         json.dump(existing_data, arq, ensure_ascii=False, indent=4)
-    
+
+    # Retorna uma resposta de sucesso
     return 'Respostas Salvas com Sucesso!'
+
+
 
 @app.route('/load-data', methods=['GET'])
 def load_data():

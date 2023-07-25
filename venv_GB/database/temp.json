@@ -1,32 +1,44 @@
 [
     {
         "palavra": "Macapá",
-        "is_toponimo": "sim",
+        "is_toponimo": true,
         "tipo": "cidade",
         "localizacao": "AP"
     },
     {
-        "palavra": "Canil do Bope",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
+        "palavra": "Creap",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
     },
     {
-        "palavra": "Macapá",
-        "is_toponimo": "sim",
-        "tipo": "cidade",
+        "palavra": "Bope",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Polícia Militar",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Amapá",
+        "is_toponimo": true,
+        "tipo": "unidade-federativa",
+        "localizacao": "AP"
+    },
+    {
+        "palavra": "Beirol",
+        "is_toponimo": true,
+        "tipo": "bairro",
         "localizacao": "AP"
     },
     {
         "palavra": "Zona Sul",
-        "is_toponimo": "sim",
+        "is_toponimo": true,
         "tipo": "zona",
-        "localizacao": "AC"
-    },
-    {
-        "palavra": "Creap",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
+        "localizacao": "TO"
     }
 ]
