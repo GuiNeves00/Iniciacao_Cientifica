@@ -51,11 +51,47 @@ function selecionarEstado() {
 // PERGUNTA 2 -- Seleciona tipo de toponimo da lista de tipos
 function selecionarTipo() {
   var tipo = document.getElementById("pergunta2-respostas").value;
-  document.getElementById("tipo-selecionado").value = tipo;
+  // document.getElementById("tipo-selecionado").value = tipo;
 }
 //_________________________________________________________________
 
 // TESTES / WIP NOVAS FUNCIONALIDADES
+
+// Obtendo dados para escrever no BD
+// const formularioBD = document.getElementById("formulario");
+
+// function obterRespostas(event, toponimo_selecionado) {
+//   var opcoesP1 = document.querySelectorAll('input[name="pergunta1"]');
+//   var respostaP1;
+//   opcoesP1.forEach(function (opcao) {
+//     if (opcao.checked) {
+//       respostaP1 = opcao.value;
+//     }
+//   });
+//   console.log("Resposta P1: " + respostaP1);
+
+//   var respostaP2 = document.getElementById("pergunta2-respostas").value;
+//   console.log("Resposta P2: " + respostaP2);
+
+//   var respostaP3 = document.getElementById("listaEstados").value;
+//   console.log("Resposta P3: " + respostaP3);
+
+//   var respostasUsuario = {
+//     pergunta1: respostaP1,
+//     pergunta2: respostaP2,
+//     pergunta3: respostaP3,
+//   };
+
+//   // escreverRespostas(respostasUsuario);
+
+//   // this.submit();
+// }
+
+// if (formularioBD) {
+//   formularioBD.addEventListener("submit", obterRespostas);
+// }
+
+// _________________________________________________________
 
 // Manipulacao e "UX" no Formulario
 const submit = document.getElementById("submit");

@@ -21,7 +21,7 @@
             </p>
         </div>
         <div class="sidebar">
-            <form method="post" id="formulario">
+            <form action="/submit-form" method="post" enctype="application/json" id="formulario">
                 <div class="centralizar">
                     <input type="hidden" id="top-s" name="top-selecionado" value="teste-value">
                     <h3 id="top-display">
@@ -46,7 +46,7 @@
                 <div id="pergunta-2">
                     <label for="pergunta2-respostas"><strong>Qual o tipo deste topônimo?</strong></label>
                     <br>
-                    <select id="pergunta2-respostas" name="pergunta-2" onchange="selecionarTipo()">
+                    <select id="pergunta2-respostas" name="pergunta-2">
                         <option value="">Selecione uma opção</option>
                         <option value="zona">Zona</option>
                         <option value="continente">Continente</option>
@@ -57,7 +57,6 @@
                         <option value="rua">Rua</option>
                         <option value="outro">Outro</option>
                     </select>
-                    <input type="text" id="tipo-selecionado" name="tipo-selecionado" readonly>
                 </div>
 
                 <div id="pergunta-3">
@@ -65,7 +64,7 @@
                         <strong>A qual estado este topônimo pertence?</strong>
                     </label>
                     <br>
-                    <select onchange="selecionarEstado()" id="listaEstados">
+                    <select id="pergunta3-respostas" name="pergunta-3">
                         <option value="">Selecione um estado</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -95,7 +94,6 @@
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
                     </select>
-                    <input type="text" id="pergunta3-respostas" name="pergunta-3" readonly>
                 </div>
 
                 <div class="centralizar">
@@ -117,6 +115,7 @@
         <a href="/"><button>Sair</button></a>
     </div>
     <script src="../static/script.js"></script>
+    <script src="../static/forms.js"></script>
 </body>
 
 </html>

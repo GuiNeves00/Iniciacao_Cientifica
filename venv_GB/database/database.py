@@ -5,15 +5,9 @@ from pathlib import Path
 class Database:
     def __init__(self, db_path):
         self.db = TinyDB(str(db_path), indent=4, ensure_ascii=False)
-        print("BD INIT === ", self.db)
     
     def get_data(self, item_id):
         return self.db.get(doc_id=item_id)
-        
-    # #TODO texto esta sendo salvo sem acentuacao
-    # def normalize_text(self, text):
-    #     normalized_text = unidecode(text)
-    #     return normalized_text
 
     #Obtem uma "chave" de um documento, e verifica se esta chave ja existe no BD, se sim, retorna True
     def key_exists(self, key):
