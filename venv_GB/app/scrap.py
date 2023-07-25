@@ -82,7 +82,7 @@ db = Database(db_path)
 
 links_noticias = obtem_links_g1()
 db.populate_DB(links_noticias, obtem_pubdate_g1(), obtem_textos_g1(links_noticias))
-#obs: antes chamava as funcoes do scrap dentro populateDB no database.py
+#!obs: antes chamava as funcoes do scrap dentro populateDB no database.py
 
 # db = database.createDB()
 # database.populate_DB(db)

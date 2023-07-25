@@ -1,44 +1,14 @@
 [
     {
-        "palavra": "Macapá",
-        "is_toponimo": true,
-        "tipo": "cidade",
-        "localizacao": "AP"
-    },
-    {
-        "palavra": "Creap",
-        "is_toponimo": false,
-        "tipo": null,
-        "localizacao": null
-    },
-    {
-        "palavra": "Bope",
-        "is_toponimo": false,
-        "tipo": null,
-        "localizacao": null
-    },
-    {
-        "palavra": "Polícia Militar",
-        "is_toponimo": false,
-        "tipo": null,
-        "localizacao": null
-    },
-    {
-        "palavra": "Amapá",
+        "palavra": "Rondônia",
         "is_toponimo": true,
         "tipo": "unidade-federativa",
-        "localizacao": "AP"
+        "localizacao": "RS"
     },
     {
-        "palavra": "Beirol",
-        "is_toponimo": true,
-        "tipo": "bairro",
-        "localizacao": "AP"
-    },
-    {
-        "palavra": "Zona Sul",
-        "is_toponimo": true,
-        "tipo": "zona",
-        "localizacao": "TO"
+        "palavra": "Banana",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
     }
 ]

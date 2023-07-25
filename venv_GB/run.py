@@ -4,13 +4,19 @@ from database.database import Database
 from pathlib import Path
 import json
 from collections import OrderedDict
+import random
+# from app import scrap #descomentar faz com q tente popular o db novamente
 
 app = Flask(__name__, static_url_path='/static')
 
 #TODO checar se ja existe a instancia (scrap.py linha 79)
 db_path = Path(__file__).resolve().parent / 'database' / 'db.json'
 db = Database(db_path)
+
 temp_path = Path(__file__).resolve().parent / 'database' / 'temp.json'
+
+db_size = len(db.all())
+lista_noticias = list(range(1, db_size + 1))
 
 formData = {}
 
@@ -30,26 +36,21 @@ def home():
 
 @app.route('/evaluate')
 def evaluate():
-    # if request.method == 'POST':
-    #     print("AVANCOU PARA A PROXIMA NOTICIA!!!!!")
-    #     noticia = db.get_data(4)
-    #     texto_noticia = noticia['texto']
-    #     toponimos = geoparsing.geoparsing_spacy(texto_noticia)
-    #     txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
 
-    #     return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos)
-    
-    # else:
+    noticia_avaliar = random.choice(lista_noticias)
+    lista_noticias.remove(noticia_avaliar)
+    noticia = db.get_data(noticia_avaliar)
 
-    noticia = db.get_data(3)
     texto_noticia = noticia['texto']
+    toponimos = geoparsing.geoparsing_spacy(texto_noticia)
+    txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
 
     # links = scrap.obtem_links_g1()
     # pubdates = scrap.obtem_pubdate_g1()
     # textos = scrap.obtem_textos_g1(links)
 
-    toponimos = geoparsing.geoparsing_spacy(texto_noticia)
-    txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
+    # toponimos = geoparsing.geoparsing_spacy(textos)
+    # txt_exibir = geoparsing.processar_txt(textos, toponimos)
         
     return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos)
 
@@ -108,6 +109,10 @@ def load_data():
 @app.route('/output')
 def output():
     return render_template('output.html', dados=formData)
+
+@app.route('/escrever-dados')
+def escrever_dados():
+    return render_template('agradecimento.html')
 
 @app.route('/downloads')
 def downloads():

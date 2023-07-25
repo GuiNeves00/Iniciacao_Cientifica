@@ -1,6 +1,7 @@
 # from app import scrap as scrap
 from tinydb import TinyDB, Query
 from pathlib import Path
+from app import geoparsing
 
 class Database:
     def __init__(self, db_path):
@@ -8,6 +9,9 @@ class Database:
     
     def get_data(self, item_id):
         return self.db.get(doc_id=item_id)
+
+    def all(self):
+        return self.db.all()
 
     #Obtem uma "chave" de um documento, e verifica se esta chave ja existe no BD, se sim, retorna True
     def key_exists(self, key):
@@ -32,8 +36,8 @@ class Database:
                 "titulo": i,
                 "subtitulo": i,
                 "texto": texto,
-                "NLP": i,
-                "contribuicoes": i
+                "NLP": geoparsing.geoparsing(texto),
+                "contribuicoes": []
             }
 
             # Garante que o documento seja adicionado ao BD apenas caso ele ainda nao exista no BD
