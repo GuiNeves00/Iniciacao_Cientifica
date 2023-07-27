@@ -111,7 +111,10 @@
 
     </div>
     <div id="continuar-sair">
-        <button id="continuar">Próxima Notícia</button>
+        <form action="{{ url_for('agradecimento') }}" method="post">
+            <input type="hidden" name="id_noticia_avaliada" value="{{ id_noticia_avaliada }}">
+            <button type="submit" id="continuar">Próxima Notícia</button>
+        </form>
         <a href="/"><button>Sair</button></a>
     </div>
     <script src="../static/script.js"></script>

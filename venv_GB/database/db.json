@@ -806,7 +806,84 @@
                 "PM",
                 "Polícia Civil de Nova Serrana"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Corpo",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Araújos",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "PM",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Nova Serrana",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    }
+                ],
+                [
+                    {
+                        "palavra": "PM",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Polícia Civil de Nova Serrana",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Corpo",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Araújos",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Capivari dos Eleotérios",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Nova Serrana",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Polícia Militar",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Polícia Civil de Nova Serrana",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    }
+                ]
+            ]
         },
         "31": {
             "url": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2018/07/23/guinness-book-registra-maior-orquestra-de-viola-do-mundo-durante-evento-em-uberlandia.ghtml",

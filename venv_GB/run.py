@@ -52,7 +52,7 @@ def evaluate():
     # toponimos = geoparsing.geoparsing_spacy(textos)
     # txt_exibir = geoparsing.processar_txt(textos, toponimos)
         
-    return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos)
+    return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos, id_noticia_avaliada=noticia_avaliar)
 
 @app.route('/submit-form', methods=['POST'])
 def submit_form():
@@ -110,9 +110,15 @@ def load_data():
 def output():
     return render_template('output.html', dados=formData)
 
-@app.route('/escrever-dados')
-def escrever_dados():
-    return render_template('agradecimento.html')
+@app.route('/agradecimento', methods=['POST'])
+def agradecimento():
+    id_noticia_avaliada = request.form.get('id_noticia_avaliada')
+    dados = db.get_data(id_noticia_avaliada)
+    url_alvo = dados['url']
+
+    db.atualizar_contribuicoes(url_alvo, temp_path)
+
+    return render_template('agradecimento.html', dados=dados['url'])
 
 @app.route('/downloads')
 def downloads():

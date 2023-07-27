@@ -1,7 +1,8 @@
 # from app import scrap as scrap
 from tinydb import TinyDB, Query
 from pathlib import Path
-from app import geoparsing
+import json
+from app import geoparsing as geop
 
 class Database:
     def __init__(self, db_path):
@@ -36,7 +37,7 @@ class Database:
                 "titulo": i,
                 "subtitulo": i,
                 "texto": texto,
-                "NLP": geoparsing.geoparsing(texto),
+                "NLP": geop.geoparsing(texto),
                 "contribuicoes": []
             }
 
@@ -52,3 +53,34 @@ class Database:
     def db_exists(self):
         db_file = Path(__file__).parent / 'db.json'
         return db_file.exists()
+
+    def atualizar_contribuicoes(self, key, arq_contribuicoes):
+        Noticia = Query()
+        # registro = self.db.search(Noticia.url.search(key))
+
+        registro = self.db.get(Noticia.url == key)
+
+        with open (arq_contribuicoes, 'r') as arq:
+            contribuicoes_temp = json.load(arq)
+
+        contribuicoes = []
+
+        for item in contribuicoes_temp:
+            contribuicao = {
+                "palavra": item["palavra"],
+                "is_toponimo": item["is_toponimo"],
+                "tipo": item["tipo"],
+                "localizacao": item["localizacao"]
+            }
+            contribuicoes.append(contribuicao)
+
+        # if "contribuicoes" not in registro:
+        registro["contribuicoes"].append(contribuicoes)
+
+        self.db.update({"contribuicoes": registro["contribuicoes"]}, Noticia.url == key)
+
+        with open (arq_contribuicoes, 'w') as file:
+            file.truncate()
+        # db.update({'history': [[{'a':'b'}]]}, Lista.status == 'done')
+
+        
