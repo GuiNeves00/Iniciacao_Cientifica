@@ -15,6 +15,7 @@ db = Database(db_path)
 
 temp_path = Path(__file__).resolve().parent / 'database' / 'temp.json'
 
+# cria uma lista contendo os índices do BD
 db_size = len(db.all())
 lista_noticias = list(range(1, db_size + 1))
 
@@ -49,7 +50,7 @@ def evaluate():
     # pubdates = scrap.obtem_pubdate_g1()
     # textos = scrap.obtem_textos_g1(links)
 
-    # toponimos = geoparsing.geoparsing_spacy(textos)
+    # toponimos = geoparsing.geoparsing_spacy(textos[1])
     # txt_exibir = geoparsing.processar_txt(textos, toponimos)
         
     return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos, id_noticia_avaliada=noticia_avaliar)

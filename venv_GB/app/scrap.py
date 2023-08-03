@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup as bs
-import json
-import os
 from database.database import Database
 from pathlib import Path
 
@@ -45,7 +43,9 @@ def obtem_textos_g1(links_noticias):
     return: textos  ->  lista onde cada indice representa o texto extraido de uma noticia"""
 
     textos = []
-
+    titulos = []
+    subtitulos = []
+    
     # Percorre todas as noticias, extraindo apenas seus textos, armazenando na lista 'textos'
     for i in range(len(links_noticias)):
         noticia = requests.get(links_noticias[i])
@@ -53,28 +53,32 @@ def obtem_textos_g1(links_noticias):
     
         # Extrai o titulo e todo o texto da noticia
         texto_noticia = []
-        
+    
         titulo = noticia_bs.find("h1", attrs={"class": "content-head__title"})
-        texto_noticia.append("<h3>")
+        titulos.append(titulo.get_text())
+        texto_noticia.append(' <h3> ')
         texto_noticia.append(titulo.get_text())
-        texto_noticia.append("</h3>")
+        texto_noticia.append(' </h3> ')
         
         sub_titulo = noticia_bs.find("h2", attrs={"class": "content-head__subtitle"})
-        texto_noticia.append("<h4>")
+        subtitulos.append(sub_titulo.get_text())
+        texto_noticia.append(' <h4> ')
         texto_noticia.append(sub_titulo.get_text())
-        texto_noticia.append("</h4>")
+        texto_noticia.append(' </h4> ')
 
         for texto in noticia_bs.find_all("p", attrs={"class": "content-text__container"}):
             texto_noticia.append(texto.get_text())
-            texto_noticia.append('<br><br>') #quebra de linha para separar por paragrafos
+            texto_noticia.append(' <p> ')
+            # texto_noticia.append(' <pre> </pre> ') #quebra de linha para separar por paragrafos
             blob = ''.join(texto_noticia)   # cada indice representava uma tag html, aqui juntamos tudo
                                             # em um unico texto
-
+        
         textos.append(blob)     # adiciona texto inteiro de uma noticia a lista textos
     #FIXME nao esta salvando as novas noticias do rss
     # salvar_texto_json(textos)
 
-    return textos
+    return textos, titulos, subtitulos
+
 
 #TODO a ideia é criar uma "rotina" que vai executar este arquivo scrap.py a cada X tempo. Tenho que verificar se existe a necessidade de criar uma verificação aqui que verifique se já existe uma instância do BD, se sim, não instanciar novamente (db=Database(db_path)). Cogitar fazer essa verificação com uma simples 'flag'. No momento, (acreidto que) estou apenas sobrescrevendo a instância, não sei se isso pode acarretar em um problema.
 db_path = Path(__file__).resolve().parent.parent / 'database' / 'db.json'

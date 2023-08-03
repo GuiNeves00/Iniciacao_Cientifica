@@ -83,6 +83,7 @@ def geoparsing(blob_text, option='spacy'):
         except ValueError as error:
             option = input(f"{error}. Insira uma opção válida ({', '.join(valid_options)}): ")
 
+    #option in valid_options
     if option == 'spacy' or option == 'Spacy' or option == 'spaCy' or option == 'SpaCy':
         nlp = spacy.load('pt_core_news_sm')     # "Carrega" textos (base de dados) em pt
         doc = nlp(blob_text)

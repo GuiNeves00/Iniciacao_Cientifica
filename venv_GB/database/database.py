@@ -30,12 +30,12 @@ class Database:
         # pubdates = scrap.obtem_pubdate_g1()
         # textos = scrap.obtem_textos_g1(links)
 
-        for i, (link, pubdate, texto) in enumerate(zip(links, pubdates, textos), 1):
+        for link, pubdate, texto, titulo, subtitulo, in zip(links, pubdates, textos[0], textos[1], textos[2]):
             dados = {
                 "url": link,
                 "pubdate": pubdate,
-                "titulo": i,
-                "subtitulo": i,
+                "titulo":titulo,
+                "subtitulo": subtitulo,
                 "texto": texto,
                 "NLP": geop.geoparsing(texto),
                 "contribuicoes": []
