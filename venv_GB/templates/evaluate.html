@@ -117,6 +117,16 @@
         </form>
         <a href="/"><button>Sair</button></a>
     </div>
+
+    <div id="overlay"></div>
+
+    <div id="confirmar-noticia-inedita">
+        <p>Você já avaliou esta notícia?</p>
+        <button onclick="recarregarPagina()">Sim</button>
+        <button
+            onclick="document.getElementById('confirmar-noticia-inedita').style.display = 'none'; document.getElementById('overlay').style.display = 'none'">Não</button>
+    </div>
+
     <script src="../static/script.js"></script>
     <script src="../static/forms.js"></script>
 </body>

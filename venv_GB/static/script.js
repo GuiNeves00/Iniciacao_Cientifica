@@ -36,7 +36,19 @@ if (toponimos) {
 window.onload = function () {
   var qntdToponimos = toponimos.length;
   alert("Existem " + qntdToponimos + " possíveis topônimos nesta notícia");
+  exibirDialogo();
 };
+
+function exibirDialogo() {
+  var dialogo = document.getElementById("confirmar-noticia-inedita");
+  dialogo.style.display = "block";
+  overlay.style.display = "block";
+}
+
+function recarregarPagina() {
+  location.reload();
+}
+
 //_________________________________________________________________
 
 // PERGUNTA 3 -- Seleciona estado da lista de estados

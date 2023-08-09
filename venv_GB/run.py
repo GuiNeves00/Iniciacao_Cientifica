@@ -37,14 +37,16 @@ def home():
 
 @app.route('/evaluate')
 def evaluate():
+    try:
+        noticia_avaliar = random.choice(lista_noticias)
+        lista_noticias.remove(noticia_avaliar)
+        noticia = db.get_data(noticia_avaliar)
 
-    noticia_avaliar = random.choice(lista_noticias)
-    lista_noticias.remove(noticia_avaliar)
-    noticia = db.get_data(noticia_avaliar)
-
-    texto_noticia = noticia['texto']
-    toponimos = geoparsing.geoparsing_spacy(texto_noticia)
-    txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
+        texto_noticia = noticia['texto']
+        toponimos = geoparsing.geoparsing_spacy(texto_noticia)
+        txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
+    except IndexError as error:
+        return redirect(url_for('obrigado'))
 
     # links = scrap.obtem_links_g1()
     # pubdates = scrap.obtem_pubdate_g1()
@@ -107,19 +109,19 @@ def load_data():
     # Retorna os dados existentes como resposta à solicitação GET
     return jsonify(existing_data)
 
-@app.route('/output')
+@app.route('/obrigado')
 def output():
-    return render_template('output.html', dados=formData)
+    return render_template('obrigado.html')
 
 @app.route('/agradecimento', methods=['POST'])
 def agradecimento():
+
     id_noticia_avaliada = request.form.get('id_noticia_avaliada')
     dados = db.get_data(id_noticia_avaliada)
     url_alvo = dados['url']
-
     db.atualizar_contribuicoes(url_alvo, temp_path)
 
-    return render_template('agradecimento.html', dados=dados['url'])
+    return redirect(url_for('evaluate'))
 
 @app.route('/downloads')
 def downloads():

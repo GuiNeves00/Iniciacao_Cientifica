@@ -96,7 +96,28 @@
                 "Ifap",
                 "Ifap"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Ifap",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "AP"
+                    },
+                    {
+                        "palavra": "Ibama",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    }
+                ]
+            ]
         },
         "5": {
             "url": "https://g1.globo.com/ce/ceara/noticia/2021/10/20/homem-e-condenado-a-50-anos-de-prisao-por-assassinato-de-duas-criancas-em-vicosa-do-ceara.ghtml",
@@ -200,7 +221,46 @@
                 "Complexo Cidade das Águas",
                 "R$"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Cidade das Águas em Frutal",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "MPMG",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Estado",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Águas",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Complexo Cidade das Águas",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Frutal",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    }
+                ]
+            ]
         },
         "8": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/08/18/carlinhos-maia-apresenta-show-de-humor-mas-carlos-pela-primeira-vez-no-ap.ghtml",
@@ -345,7 +405,34 @@
                 "Auditório do SebraeEntrada",
                 "Teatro das BacabeirasIngresso"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "AP"
+                    },
+                    {
+                        "palavra": "Amazônia",
+                        "is_toponimo": true,
+                        "tipo": "outro",
+                        "localizacao": "AM"
+                    },
+                    {
+                        "palavra": "Alcântara",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Teatro das Bacabeiras",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    }
+                ]
+            ]
         },
         "14": {
             "url": "https://g1.globo.com/rr/roraima/noticia/2018/07/26/sem-dinheiro-venezuelanos-acampam-as-margens-de-rodovia-na-fronteira-do-brasil-aqui-pelo-menos-temos-comida.ghtml",
@@ -477,7 +564,22 @@
                 "Carteira de Trabalho",
                 "RG"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Sine",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "AP"
+                    }
+                ]
+            ]
         },
         "18": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/07/23/com-surto-na-regiao-norte-campanha-contra-o-sarampo-no-ap-comeca-em-agosto.ghtml",
@@ -499,7 +601,16 @@
                 "Macapá",
                 "Amapá"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "região Norte",
+                        "is_toponimo": true,
+                        "tipo": "zona",
+                        "localizacao": "TO"
+                    }
+                ]
+            ]
         },
         "19": {
             "url": "https://g1.globo.com/mg/zona-da-mata/noticia/2018/07/23/policia-civil-de-juiz-de-fora-recebe-denuncia-de-mais-uma-empresa-que-teve-conteineres-desviados.ghtml",
@@ -663,7 +774,28 @@
                 "PM",
                 "Dmae"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Bombeiros",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Distrito Industrial",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    }
+                ]
+            ]
         },
         "25": {
             "url": "https://g1.globo.com/ro/ji-parana-regiao-central/noticia/2018/07/23/municipios-de-rondonia-se-preparam-para-extingir-lixoes-a-ceu-aberto.ghtml",
@@ -817,7 +949,16 @@
                 "Saudade da Minha Terra",
                 "Belmonte"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    }
+                ]
+            ]
         },
         "32": {
             "url": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2018/07/23/umidade-relativa-do-ar-pode-chegar-a-20-em-cidades-do-triangulo-mineiro-e-alto-paranaiba.ghtml",
@@ -830,7 +971,22 @@
                 "Condição",
                 "Triângulo Mineiro e Alto Paranaíba"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Triângulo Mineiro e Alto Paranaíba",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Condição",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    }
+                ]
+            ]
         },
         "33": {
             "url": "https://g1.globo.com/ce/ceara/noticia/2018/07/23/filme-de-terror-diz-policial-que-resgatou-animais-abandonados-em-casa-no-ceara.ghtml",
@@ -998,7 +1154,34 @@
                 "Rua Perdizes",
                 "Centro"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Procon",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Araxá",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Rua Perdizes",
+                        "is_toponimo": true,
+                        "tipo": "rua",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": true,
+                        "tipo": "bairro",
+                        "localizacao": "MG"
+                    }
+                ]
+            ]
         },
         "40": {
             "url": "https://g1.globo.com/ro/rondonia/noticia/2018/07/23/homem-persegue-esposa-com-facao-apos-vitima-voltar-de-festa-familiar-em-ro.ghtml",
