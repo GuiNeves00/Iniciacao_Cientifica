@@ -1,0 +1,116 @@
+[
+    {
+        "palavra": "Levantamento do G1",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "MG",
+        "is_toponimo": true,
+        "tipo": "unidade-federativa",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "Cidade",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Encontro de Bateristas do Triângulo",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Visitações",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Sesc",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "cabo Marcelo",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Corpo",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Viemos",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Governo",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Bope",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Justiça",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Ingressos",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Estadual",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "PM",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Banana",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Amigos da Cachoeira",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    },
+    {
+        "palavra": "Uberlândia",
+        "is_toponimo": true,
+        "tipo": "cidade",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "Estado",
+        "is_toponimo": false,
+        "tipo": null,
+        "localizacao": null
+    }
+]

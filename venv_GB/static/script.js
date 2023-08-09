@@ -3,10 +3,12 @@ const toponimos = Array.from(document.querySelectorAll(".toponimo"));
 const toponimo_display = document.querySelector("#top-display");
 let toponimo_selecionado = document.getElementById("top-s");
 const formulario = document.getElementById("formulario");
+let toponimo_clicado_estilo = null;
 
 /**@param {MouseEvent} event */
 function selecionarToponimo(event) {
   const toponimo_clicado = event.currentTarget.innerHTML;
+  toponimo_clicado_estilo = event.currentTarget;
   toponimo_display.innerHTML = '"' + toponimo_clicado + '"';
   toponimo_selecionado.value = toponimo_clicado;
   // sempre que escolher um novo toponimo para avaliar
@@ -30,6 +32,16 @@ if (toponimos) {
     toponimo.addEventListener("click", selecionarToponimo)
   );
 }
+
+// Faz com que a palavra avaliada mude de cor apos o envio do formulario
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  if (toponimo_clicado_estilo) {
+    toponimo_clicado_estilo.style.backgroundColor = "lightgreen";
+    toponimo_clicado_estilo = null;
+  }
+});
 //_________________________________________________________________
 
 // Exibir quantos possíveis toponimos existem na noticia
