@@ -21,14 +21,6 @@ lista_noticias = list(range(1, db_size + 1))
 
 formData = {}
 
-def load_existing_data():
-    # Verifica se o arquivo temp.json existe e não está vazio
-    if temp_path.is_file() and temp_path.stat().st_size > 0:
-        with open(temp_path, 'r', encoding='utf-8') as arq:
-            existing_data = json.load(arq)
-        return existing_data
-    else:
-        return []
 
 @app.route('/index')
 @app.route('/')
@@ -57,57 +49,61 @@ def evaluate():
         
     return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos, id_noticia_avaliada=noticia_avaliar)
 
-@app.route('/submit-form', methods=['POST'])
-def submit_form():
-    dados = request.get_json()
+# def load_existing_data():
+#     if temp_path.is_file() and temp_path.stat().st_size > 0:
+#         with open(temp_path, 'r', encoding='utf-8') as arq:
+#             existing_data = json.load(arq)
+#         return existing_data
+#     else:
+#         return []
 
-    # Carrega os dados existentes do arquivo JSON
-    existing_data = load_existing_data()
+# @app.route('/submit-form', methods=['POST'])
+# def submit_form():
+#     dados = request.get_json()
+#     print("******************")
+#     print(dados)
+#     print("******************")
+    
+#     existing_data = load_existing_data()  # Carrega os dados existentes do arquivo JSON
+    
+#     for resposta in dados:
+#         if "palavra" in resposta:
+#             resposta_renomeada = OrderedDict()
+#             resposta_renomeada["palavra"] = resposta["palavra"]
+            
+#             if "is_toponimo" in resposta:
+#                 if isinstance(resposta["is_toponimo"], str):
+#                     resposta_renomeada["is_toponimo"] = resposta["is_toponimo"].lower() == "sim"
+#                 else:
+#                     resposta_renomeada["is_toponimo"] = resposta["is_toponimo"]
+            
+#             if "tipo" in resposta:
+#                 resposta_renomeada["tipo"] = resposta["tipo"] if resposta["tipo"] != "" else None
+            
+#             if "localizacao" in resposta:
+#                 resposta_renomeada["localizacao"] = resposta["localizacao"] if resposta["localizacao"] != "" else None
+            
+#             if not resposta_renomeada.get("is_toponimo", False):
+#                 resposta_renomeada["tipo"] = None
+#                 resposta_renomeada["localizacao"] = None
+            
+#             # Verifica se a resposta já existe nos dados existentes antes de adicionar
+#             if resposta_renomeada not in existing_data:
+#                 existing_data.append(resposta_renomeada)
+    
+#     with open(temp_path, 'w', encoding='utf-8') as arq:
+#         json.dump(existing_data, arq, ensure_ascii=False, indent=4)
+    
+#     return 'Respostas Salvas com Sucesso!'
 
-    # Limpa os dados antigos antes de adicionar as novas respostas do usuário
-    existing_data.clear()
 
-    # Adiciona as novas respostas do usuário aos dados existentes
-    for resposta in dados:
-        # Renomeia os atributos conforme desejado
-        resposta_renomeada = OrderedDict()
-        resposta_renomeada["palavra"] = resposta["palavra"]  # Ajustado para "palavra"
-        
-        # Ajusta o valor do atributo "is_toponimo" para booleano, se já não for
-        if isinstance(resposta["is_toponimo"], str):
-            resposta_renomeada["is_toponimo"] = resposta["is_toponimo"].lower() == "sim"
-        else:
-            resposta_renomeada["is_toponimo"] = resposta["is_toponimo"]
+# @app.route('/load-data', methods=['GET'])
+# def load_data():
+#     # Carrega os dados existentes do arquivo JSON
+#     existing_data = load_existing_data()
 
-        # Ajusta o valor do atributo "tipo" para null, se vazio
-        resposta_renomeada["tipo"] = resposta["tipo"] if resposta["tipo"] != "" else None
-
-        # Ajusta o valor do atributo "localizacao" para null, se vazio
-        resposta_renomeada["localizacao"] = resposta["localizacao"] if resposta["localizacao"] != "" else None
-
-        # Se o atributo "is_toponimo" for false, também ajusta os atributos "tipo" e "localizacao" para null
-        if not resposta_renomeada["is_toponimo"]:
-            resposta_renomeada["tipo"] = None
-            resposta_renomeada["localizacao"] = None
-
-        existing_data.append(resposta_renomeada)
-
-    # Salva o array atualizado no arquivo JSON (temp.json)
-    with open(temp_path, 'w', encoding='utf-8') as arq:
-        json.dump(existing_data, arq, ensure_ascii=False, indent=4)
-
-    # Retorna uma resposta de sucesso
-    return 'Respostas Salvas com Sucesso!'
-
-
-
-@app.route('/load-data', methods=['GET'])
-def load_data():
-    # Carrega os dados existentes do arquivo JSON
-    existing_data = load_existing_data()
-
-    # Retorna os dados existentes como resposta à solicitação GET
-    return jsonify(existing_data)
+#     # Retorna os dados existentes como resposta à solicitação GET
+#     return jsonify(existing_data)
 
 @app.route('/obrigado')
 def output():
@@ -126,6 +122,16 @@ def agradecimento():
 @app.route('/downloads')
 def downloads():
     return render_template('downloads.html')
+
+@app.route('/salvar_json', methods=['POST'])
+def salvar_json():
+    data = request.json  # Dados recebidos do frontend
+
+    # Grava os dados como JSON no arquivo
+    with open(temp_path, 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+    return jsonify({"message": "JSON gravado com sucesso!"})
+
 
 if __name__ == '__main__':
     app.run(debug=True)

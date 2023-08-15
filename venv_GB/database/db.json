@@ -317,7 +317,142 @@
                 "Macapá",
                 "Teatro das BacabeirasHora"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Levantamento do G1",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "MG",
+                        "is_toponimo": true,
+                        "tipo": "unidade-federativa",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Cidade",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Encontro de Bateristas do Triângulo",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Visitações",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Sesc",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "cabo Marcelo",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Corpo",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Viemos",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Governo",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Bope",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Justiça",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Ingressos",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Estadual",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "PM",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Banana",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Amigos da Cachoeira",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Estado",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "Carlinhos",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    },
+                    {
+                        "palavra": "testeTNI",
+                        "is_toponimo": true,
+                        "tipo": "zona",
+                        "localizacao": "AC"
+                    },
+                    {
+                        "palavra": "Maia",
+                        "is_toponimo": false,
+                        "tipo": null,
+                        "localizacao": null
+                    }
+                ]
+            ]
         },
         "9": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/08/17/michele-maycoth-interpreta-sucessos-de-maria-gadu-em-noite-romantica-no-ap.ghtml",
@@ -539,7 +674,82 @@
                 "Triângulo Mineiro e Alto Paranaíba",
                 "Romaria"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "BR-365",
+                        "is_toponimo": "nao-sei",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Patos de Minas",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "BR-365",
+                        "is_toponimo": "nao-sei",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Santa de Patos",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Patos de Minas",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Patos de Minas",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Romaria",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "BR-365",
+                        "is_toponimo": "nao-sei",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Triângulo Mineiro e Alto Paranaíba",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "TO"
+                    },
+                    {
+                        "palavra": "Romaria",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "testando",
+                        "is_toponimo": "sim",
+                        "tipo": "continente",
+                        "localizacao": "AP"
+                    }
+                ]
+            ]
         },
         "16": {
             "url": "https://g1.globo.com/ro/rondonia/noticia/2018/07/25/quilo-do-pirarucu-e-vendido-em-rondonia-por-r-936-no-valor-medio.ghtml",
@@ -989,6 +1199,68 @@
                         "tipo": "cidade",
                         "localizacao": "MG"
                     }
+                ],
+                [
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "nao-sei",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Brasil",
+                        "is_toponimo": "sim",
+                        "tipo": "país",
+                        "localizacao": "DF"
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Brasil",
+                        "is_toponimo": "sim",
+                        "tipo": "país",
+                        "localizacao": "DF"
+                    },
+                    {
+                        "palavra": "Ginásio do Sabiazinho",
+                        "is_toponimo": "sim",
+                        "tipo": "rua",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Saudade da Minha Terra",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Belmonte",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "testando",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MS"
+                    },
+                    {
+                        "palavra": "vitória",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "ES"
+                    }
                 ]
             ]
         },
@@ -1038,7 +1310,28 @@
                 "Distrito Policial",
                 "Praia do Futuro"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Ceará",
+                        "is_toponimo": true,
+                        "tipo": "unidade-federativa",
+                        "localizacao": "CE"
+                    },
+                    {
+                        "palavra": "testeTNI",
+                        "is_toponimo": true,
+                        "tipo": "zona",
+                        "localizacao": "AC"
+                    },
+                    {
+                        "palavra": "Fortaleza",
+                        "is_toponimo": true,
+                        "tipo": "cidade",
+                        "localizacao": "CE"
+                    }
+                ]
+            ]
         },
         "34": {
             "url": "https://g1.globo.com/mg/zona-da-mata/noticia/2018/07/23/ceu-nublado-marca-inicio-da-semana-em-cidades-da-zona-da-mata-e-campo-das-vertentes.ghtml",
