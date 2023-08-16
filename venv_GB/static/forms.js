@@ -2,12 +2,21 @@ console.log("dentro do arquivo form.js");
 
 var indice = -1;
 var existingData = [];
+var indicesRR = [];
+var checkbox = document.getElementById("checkbox-repetir-resposta"); // Checkbox de repetir resposta
 
 /**@param {MouseEvent} event */
 function obterIndice(event) {
+  indicesRR = [];
   var valor = event.currentTarget;
   indice = toponimos.indexOf(valor);
   console.log("INDICE: ", indice);
+  for (var i = 0; i < toponimos_forms.length; i++) {
+    if (toponimos_forms[i].textContent.trim() === valor.textContent.trim()) {
+      indicesRR.push(i);
+    }
+  }
+  console.log("indicesRR: ", indicesRR);
 }
 
 const toponimos_forms = Array.from(document.querySelectorAll(".toponimo"));
@@ -28,7 +37,11 @@ document
   .getElementById("formulario")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Impede o envio padrão do formulário
-
+    checkbox = document.getElementById("checkbox-repetir-resposta"); // Checkbox de repetir resposta
+    // Desabilita a checkbox para que dados inuteis (status da checkbox) nao sejam enviados no formulario
+    if (checkbox.checked) {
+      checkbox.disabled = true;
+    }
     // Coleta os dados do formulário
     var formData = new FormData(this);
     var novoObjeto = {};
@@ -55,6 +68,28 @@ document
         }
       } else {
         // Caso contrário, atualize os valores no objeto existente no índice especificado
+        if (checkbox.checked && indicesRR.length > 1) {
+          //Se a checkbox estiver marcada (e de fato ter palavra repetida marcada), repetir a resposta nos indices correspondentes
+          for (var i = 0; i < indicesRR.length; i++) {
+            switch (key) {
+              case "top-selecionado":
+                respostasUsuario[indicesRR[i]]["palavra"] = value;
+                break;
+              case "pergunta-1":
+                respostasUsuario[indicesRR[i]]["is_toponimo"] = value;
+                break;
+              case "pergunta-2":
+                respostasUsuario[indicesRR[i]]["tipo"] = value;
+                break;
+              case "pergunta-3":
+                respostasUsuario[indicesRR[i]]["localizacao"] = value;
+                break;
+              default:
+                respostasUsuario[indicesRR[i]][key] = value;
+            }
+          }
+        }
+        // Se nao, apenas escreva a resposta no indice indicado normalmente
         switch (key) {
           case "top-selecionado":
             respostasUsuario[indice]["palavra"] = value;
@@ -78,6 +113,7 @@ document
       respostasUsuario.push(novoObjeto);
     }
     indice = undefined; // Smp q usuario selecionar toponimo o valor sera alterado. Portanto garantimos que seja indefinido por padrao
+
     console.log("respostaUsuario DOIS : ", respostasUsuario); // Verifique se as respostas do usuário estão corretas
 
     // Envia os dados do formulário e os dados existentes como JSON
@@ -141,4 +177,5 @@ document
       .catch((error) => {
         console.error("Erro ao enviar os dados:", error);
       });
+    checkbox.disabled = false; // Habilita a checkbox novamente apos enviar o formulario. Feito p evitar q dados inuteis como o status da checkbox seja enviado
   });

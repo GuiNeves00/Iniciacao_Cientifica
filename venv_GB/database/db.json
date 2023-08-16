@@ -1505,6 +1505,68 @@
                         "tipo": "bairro",
                         "localizacao": "MG"
                     }
+                ],
+                [
+                    {
+                        "palavra": "Procon",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Araxá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Rua Perdizes",
+                        "is_toponimo": "sim",
+                        "tipo": "rua",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Procon",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Araxá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Alto Paranaíba",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Rua Perdizes",
+                        "is_toponimo": "sim",
+                        "tipo": "rua",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "MG"
+                    },
+                    {
+                        "palavra": "testando",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    }
                 ]
             ]
         },

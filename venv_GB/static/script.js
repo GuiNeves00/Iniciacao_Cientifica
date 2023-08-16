@@ -33,15 +33,22 @@ if (toponimos) {
   );
 }
 
-// Faz com que a palavra avaliada mude de cor apos o envio do formulario
+// Faz com que a palavra avaliada mude de cor apos o envio do formulario. Quando a opcao de repetir respsota estiver marcada, todas as palavras correspondentes mudaram de cor.
 formulario.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  if (toponimo_clicado_estilo) {
-    toponimo_clicado_estilo.style.backgroundColor = "lightgreen";
+  if (checkbox.checked && indicesRR.length > 1) {
+    for (var j = 0; j < indicesRR.length; j++) {
+      var toponimo_estilo = toponimos[indicesRR[j]];
+      toponimo_estilo.style.backgroundColor = "lightgreen";
+    }
     toponimo_clicado_estilo = null;
+  } else if (toponimo_clicado_estilo) {
+    toponimo_clicado_estilo.style.backgroundColor = "lightgreen";
   }
+  toponimo_clicado_estilo = null;
 });
+
 //_________________________________________________________________
 
 // Exibir quantos possíveis toponimos existem na noticia
@@ -81,42 +88,6 @@ function selecionarTipo() {
 
 // TESTES / WIP NOVAS FUNCIONALIDADES
 
-// Obtendo dados para escrever no BD
-// const formularioBD = document.getElementById("formulario");
-
-// function obterRespostas(event, toponimo_selecionado) {
-//   var opcoesP1 = document.querySelectorAll('input[name="pergunta1"]');
-//   var respostaP1;
-//   opcoesP1.forEach(function (opcao) {
-//     if (opcao.checked) {
-//       respostaP1 = opcao.value;
-//     }
-//   });
-//   console.log("Resposta P1: " + respostaP1);
-
-//   var respostaP2 = document.getElementById("pergunta2-respostas").value;
-//   console.log("Resposta P2: " + respostaP2);
-
-//   var respostaP3 = document.getElementById("listaEstados").value;
-//   console.log("Resposta P3: " + respostaP3);
-
-//   var respostasUsuario = {
-//     pergunta1: respostaP1,
-//     pergunta2: respostaP2,
-//     pergunta3: respostaP3,
-//   };
-
-//   // escreverRespostas(respostasUsuario);
-
-//   // this.submit();
-// }
-
-// if (formularioBD) {
-//   formularioBD.addEventListener("submit", obterRespostas);
-// }
-
-// _________________________________________________________
-
 // Manipulacao e "UX" no Formulario
 const submit = document.getElementById("submit");
 const pergunta1 = document.getElementById("pergunta-1");
@@ -128,7 +99,7 @@ const respostaP3 = document.getElementById("pergunta3-respostas");
 
 // A funcao abaixo mostra ou nao a pergunta 2 e o botao de enviar
 // com base na resposta da pergunta 1
-function mostrarPergunta2(event) {
+function mostrarPergunta2() {
   // se a resposta da pergunta 1 for 'sim', 'nao-sei' ou vazia,
   // mostre a pergunta 2 e mantenha o submit desativado
   if (
@@ -153,7 +124,7 @@ pergunta1.addEventListener("change", mostrarPergunta2);
 //...
 
 // Mostrar pergunta 3 apos pergunta 2 ter sido respondida
-function mostrarPergunta3(event) {
+function mostrarPergunta3() {
   if (pergunta2.value !== "") {
     pergunta3.style.display = "block";
   } else {
@@ -164,7 +135,7 @@ pergunta2.addEventListener("change", mostrarPergunta3);
 //...
 
 // Disponibiliza o botão de submit apos a pergunta 3 ter sido respondida
-function mostrarSubmit(event) {
+function mostrarSubmit() {
   if (pergunta3.value !== "") {
     submit.disabled = false;
     submit.style.backgroundColor = "lightgreen";
@@ -179,7 +150,7 @@ pergunta3.addEventListener("change", mostrarSubmit);
 const continuar = document.getElementById("continuar");
 
 /** @param {MouseEvent} event */
-function continuarAvaliando(event) {
+function continuarAvaliando() {
   console.log("Clicou em Próxima Notícia");
   location.reload();
 }

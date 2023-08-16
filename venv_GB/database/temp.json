@@ -1,0 +1,143 @@
+[
+    {
+        "palavra": "Polícia Civil",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Juiz de Fora",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "de São Paulo",
+        "is_toponimo": "nao-sei",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Belo Horizonte",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "Delegacia de Polícia Civil de Juiz de Fora",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Zona da Mata",
+        "is_toponimo": "nao-sei",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "de São Paulo",
+        "is_toponimo": "nao-sei",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Polícia Civil",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Matias Barbosa",
+        "is_toponimo": "nao-sei",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Vila Container",
+        "is_toponimo": "sim",
+        "tipo": "outro",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "Juiz de Fora",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "Juiz de Fora",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "Belo Horizonte",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "São Paulo",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "SP"
+    },
+    {
+        "palavra": "Belo Horizonte",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "de São Paulo",
+        "is_toponimo": "nao-sei",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Polícia Civil",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Minas Gerais",
+        "is_toponimo": "sim",
+        "tipo": "unidade-federativa",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "Polícia Civil",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Campos Elísios",
+        "is_toponimo": "sim",
+        "tipo": "outro",
+        "localizacao": "MG"
+    },
+    {},
+    {
+        "palavra": "Juiz de Fora",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "MG"
+    },
+    {
+        "palavra": "Matias Barbosa",
+        "is_toponimo": "nao-sei",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {},
+    {},
+    {
+        "palavra": "Polícia Civil",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    }
+]
