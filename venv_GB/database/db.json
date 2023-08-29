@@ -472,7 +472,64 @@
                 "Norte Rock",
                 "Villa Nova Shopping"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Evento",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Zona Central",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Zona Central",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Zona Central",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Avenida José Antônio Siqueira",
+                        "is_toponimo": "sim",
+                        "tipo": "avenida",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Norte Rock",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Villa Nova Shopping",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    }
+                ]
+            ]
         },
         "10": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/08/08/exposicao-minha-aldeia-reune-fotografias-inspiradas-no-cotidiano-amapaense.ghtml",
@@ -931,7 +988,106 @@
                 "Afuá",
                 "Amapá"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "PA",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Afuá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Pará",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Justiça",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Santa Inês",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Afuá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Pará",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Justiça",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Santa Inês",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Justiça",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Amapá",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Afuá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Amapá",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "testeTNI",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    }
+                ]
+            ]
         },
         "22": {
             "url": "https://g1.globo.com/ce/ceara/noticia/2018/07/23/ceara-tem-66-municipios-com-emergencia-reconhecida-pelo-governo-federal.ghtml",
@@ -998,7 +1154,82 @@
                 "Santa Inês",
                 "São Luís"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Laudo",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "São Luís",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Laudo",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "São Luís",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Secretaria de Meio Ambiente do Maranhão",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "São Luís",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "São Luís",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Ponta d'Areia",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Calhau",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "São Marcos",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Santa Inês",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "São Luís",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    }
+                ]
+            ]
         },
         "24": {
             "url": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2018/07/23/bombeiros-registram-fogo-em-vegetacao-no-bairro-industrial-em-uberlandia.ghtml",
@@ -1035,6 +1266,62 @@
                         "is_toponimo": true,
                         "tipo": "cidade",
                         "localizacao": "MG"
+                    }
+                ],
+                [
+                    {
+                        "palavra": "Bombeiros",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Distrito Industrial",
+                        "is_toponimo": "nao-sei",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Bombeiros",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Distrito Industrial de Uberlândia",
+                        "is_toponimo": "nao-sei",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Norte",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Polícia Militar",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "PM",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Dmae",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
                     }
                 ]
             ]

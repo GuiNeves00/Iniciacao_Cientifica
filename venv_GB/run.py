@@ -106,16 +106,19 @@ def evaluate():
 #     return jsonify(existing_data)
 
 @app.route('/obrigado')
-def output():
+def obrigado():
     return render_template('obrigado.html')
 
-@app.route('/agradecimento', methods=['POST'])
-def agradecimento():
+@app.route('/processamento', methods=['POST'])
+def processamento():
 
     id_noticia_avaliada = request.form.get('id_noticia_avaliada')
     dados = db.get_data(id_noticia_avaliada)
     url_alvo = dados['url']
-    db.atualizar_contribuicoes(url_alvo, temp_path)
+    try:
+        db.atualizar_contribuicoes(url_alvo, temp_path)
+    except (json.JSONDecodeError, KeyError):
+        return redirect(url_for('evaluate'))
 
     return redirect(url_for('evaluate'))
 

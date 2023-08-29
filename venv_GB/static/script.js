@@ -18,7 +18,7 @@ function selecionarToponimo(event) {
   pergunta2.style.display = "none";
   pergunta3.style.display = "none";
   submit.disabled = true;
-  submit.style.backgroundColor = "lightgray";
+  submit.style.backgroundColor = "#f8f8f2";
   formulario.reset();
 
   // se nenhum toponimo estiver selecionado, remova a pergunta1
@@ -40,13 +40,17 @@ formulario.addEventListener("submit", function (event) {
   if (checkbox.checked && indicesRR.length > 1) {
     for (var j = 0; j < indicesRR.length; j++) {
       var toponimo_estilo = toponimos[indicesRR[j]];
-      toponimo_estilo.style.backgroundColor = "lightgreen";
+      toponimo_estilo.style.backgroundColor = "#50fa7b";
+      toponimo_estilo.style.color = "black";
     }
     toponimo_clicado_estilo = null;
   } else if (toponimo_clicado_estilo) {
-    toponimo_clicado_estilo.style.backgroundColor = "lightgreen";
+    toponimo_clicado_estilo.style.backgroundColor = "#50fa7b";
+    toponimo_clicado_estilo.style.color = "black";
   }
   toponimo_clicado_estilo = null;
+  submit.disabled = true;
+  submit.style.backgroundColor = "#f8f8f2";
 });
 
 //_________________________________________________________________
@@ -97,19 +101,17 @@ const pergunta3 = document.getElementById("pergunta-3");
 const respostaP2 = document.getElementById("pergunta2-respostas");
 const respostaP3 = document.getElementById("pergunta3-respostas");
 
-// A funcao abaixo mostra ou nao a pergunta 2 e o botao de enviar
-// com base na resposta da pergunta 1
+// A funcao abaixo mostra ou nao a pergunta 2 e o botao de enviar com base na resposta da pergunta 1
 function mostrarPergunta2() {
-  // se a resposta da pergunta 1 for 'sim', 'nao-sei' ou vazia,
-  // mostre a pergunta 2 e mantenha o submit desativado
+  // se a resposta da pergunta 1 for 'sim' mostre a pergunta 2 e mantenha o submit desativado
   if (
     pergunta1.querySelector('input[name="pergunta-1"]:checked').value === "sim"
   ) {
     pergunta2.style.display = "block";
     submit.disabled = true;
-    submit.style.backgroundColor = "lightgray";
+    submit.style.backgroundColor = "#f8f8f2";
   }
-  // se a resposta da pergunta 1 for 'nao',
+  // se a resposta da pergunta 1 for 'nao' ou 'nao-sei',
   // remova a resposta das outras perguntas, matenha-as escondidas e ative o submit
   else {
     pergunta2.style.display = "none";
@@ -117,7 +119,7 @@ function mostrarPergunta2() {
     pergunta3.style.display = "none";
     respostaP3.value = "";
     submit.disabled = false;
-    submit.style.backgroundColor = "lightgreen";
+    submit.style.backgroundColor = "#50fa7b";
   }
 }
 pergunta1.addEventListener("change", mostrarPergunta2);
@@ -138,7 +140,7 @@ pergunta2.addEventListener("change", mostrarPergunta3);
 function mostrarSubmit() {
   if (pergunta3.value !== "") {
     submit.disabled = false;
-    submit.style.backgroundColor = "lightgreen";
+    submit.style.backgroundColor = "#50fa7b";
   } else {
     submit.disabled = true;
   }
@@ -182,3 +184,14 @@ if (teste) {
   teste.addEventListener("keydown", handleEnter);
 }
 //_________________________________________________________________
+
+window.addEventListener("load", () => {
+  const sidebar = document.querySelector(".sidebar");
+  const alturaJanela = window.innerHeight;
+  sidebar.style.height = `${alturaJanela}px`;
+
+  window.addEventListener("resize", () => {
+    const novaAlturaJanela = window.innerHeight;
+    sidebar.style.height = `${novaAlturaJanela}px`;
+  });
+});
