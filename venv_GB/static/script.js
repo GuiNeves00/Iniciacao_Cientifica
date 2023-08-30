@@ -64,16 +64,20 @@ window.onload = function () {
   cniQntdToponimos.textContent =
     "Possíveis nomes de lugares nesta notícia: " + qntdToponimos;
   exibirDialogo();
+
   document
     .getElementById("tutorial-btn")
     .addEventListener("click", openTutorial);
+
   const closeButton = document.getElementById("fechar-tutorial-btn");
   closeButton.style.visibility = "visible";
+
   document
     .getElementById("tutorial-popup")
     .addEventListener("scroll", function () {
       closeButton.style.visibility = this.scrollTop > 20 ? "visible" : "hidden";
     });
+
   // Event listener to close the popup when clicking outside of it
   window.addEventListener("click", function (event) {
     const popup = document.getElementById("tutorial-popup");
@@ -235,8 +239,24 @@ function openTutorial() {
   popup.style.display = "block";
 }
 
+function openSobre() {
+  var popup = document.getElementById("sobre-popup");
+  popup.style.display = "block";
+}
+
 // Função para fechar o popup
 function closeTutorial() {
   var popup = document.getElementById("tutorial-popup");
   popup.style.display = "none";
 }
+
+function closeSobre() {
+  var popup = document.getElementById("sobre-popup");
+  popup.style.display = "none";
+}
+
+document.getElementById("sobre-btn").addEventListener("click", openSobre);
+
+document.getElementById("sobre-popup").addEventListener("scroll", function () {
+  closeButton.style.visibility = this.scrollTop > 20 ? "visible" : "hidden";
+});

@@ -264,14 +264,6 @@ a proxima ira aparecer */
 } */
 
 /* TUTORIAL */
-/* Estilo para o botão */
-#open-tutorial-btn {
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
 
 /* Estilo para o popup */
 .popup {
@@ -319,4 +311,25 @@ a proxima ira aparecer */
 .close-icon {
   font-size: 36px; /* Aumente o tamanho do ícone */
   color: #ff5555;
+}
+
+#download-popup .popup-content p {
+  color: #f8f8f2;
+}
+#download-popup .popup-content button {
+  background-color: #6272a4;
+  color: #f8f8f2;
+  border: 0px solid;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+#sobre-popup p {
+  color: #f8f8f2;
+}
+
+#sobre-popup a {
+  color: #bd93f9;
+  text-decoration: italic;
 }

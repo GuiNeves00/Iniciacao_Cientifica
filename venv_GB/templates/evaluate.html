@@ -12,7 +12,7 @@
 <body>
     <div id="header">
         <button id="download-btn">Downloads</button><button id="tutorial-btn">Tutorial</button><button
-            id="sobre">Sobre</button>
+            id="sobre-btn">Sobre</button>
     </div>
     <div class="avaliar">
         <div class="wrapper">
@@ -417,6 +417,25 @@
                         clicar em próxima notícia, para continuar contribuindo, ou em sair.</li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <div id="download-popup" class="popup">
+        <div class="popup-content">
+            <p>Deseja fazer o download da base de dados atual?</p>
+            <button id="btn-download-sim">Sim</button>
+            <button id="btn-download-nao">Cancelar</button>
+        </div>
+    </div>
+
+    <div id="sobre-popup" class="popup">
+        <div class="popup-content">
+            <button id="fechar-sobre-btn" class="close-button" onclick="closeSobre()"><span
+                    class="close-icon">&#10006;</span></button>
+            <p>Projeto de Iniciação Científica, do Programa Institucional de Bolsas de Iniciação Científica (PIBIC) da
+                Fundação de Amparo à Pesquisa do Estado de Minas Gerais (FAPEMIG)</p>
+            <p>Desenvolvido por: <a href="mailto:guilherme.lns@aluno.ufop.edu.br">Guilherme Neves</a></p>
+            <p>Orientado por: <a href="mailto:bruno@ufop.edu.br">Bruno Rabello</a></p>
         </div>
     </div>
 
