@@ -1,22 +1,10 @@
 [
     {
-        "palavra": "Cidade das Águas em Frutal",
+        "palavra": "Macapá",
         "is_toponimo": "sim",
         "tipo": "cidade",
         "localizacao": "Brasil"
     },
-    {
-        "palavra": "MPMG",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
-    },
-    {
-        "palavra": "Estado",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
-    },
     {},
     {},
     {},
@@ -30,61 +18,11 @@
     {},
     {},
     {},
-    {
-        "palavra": "Estado",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
-    },
-    {},
-    {},
-    {
-        "palavra": "Estado",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
-    },
     {},
     {},
     {},
     {},
     {},
-    {},
-    {},
-    {
-        "palavra": "Estado",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
-    },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {
-        "palavra": "Estado",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
-    },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {
-        "palavra": "Estado",
-        "is_toponimo": "nao",
-        "tipo": "",
-        "localizacao": ""
-    },
     {},
     {},
     {}

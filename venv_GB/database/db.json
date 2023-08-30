@@ -1404,7 +1404,58 @@
                 "Ministério",
                 "Ministério Público"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Beberibe",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Ceará",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Beberibe",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Ceará",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Ministério Público do Ceará",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Ministério",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Beberibe",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Ministério Público",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    }
+                ]
+            ]
         },
         "28": {
             "url": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2018/07/23/um-ano-apos-anuncio-videomonitoramento-no-parque-do-sabia-em-uberlandia-ainda-nao-e-concluido.ghtml",

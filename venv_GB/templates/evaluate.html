@@ -10,9 +10,10 @@
 </head>
 
 <body>
-    <!-- <div id="header-footer">
-        <button id="b-inicio">Início</button><button id="b-tutorial">Tutorial</button>
-    </div> -->
+    <div id="header">
+        <button id="downloads">Downloads</button><button id="tutorial-btn">Tutorial</button><button
+            id="sobre">Sobre</button>
+    </div>
     <div class="avaliar">
         <div class="wrapper">
             <div class="noticia">
@@ -341,7 +342,7 @@
                         <input type="submit" name="enviar" id="submit" value="Enviar" disabled>
                     </div>
                     <div id="novo-toponimo-div">
-                        <label for="novo-toponimo"><strong>Adicionar Topônimo Não Identificado:</strong></label>
+                        <label for="novo-toponimo"><strong>Adicionar Local Não Identificado:</strong></label>
                         <br>
                         <input type="text" id="novo-toponimo">
                     </div>
@@ -366,10 +367,57 @@
     <div id="overlay"></div>
 
     <div id="confirmar-noticia-inedita">
-        <p>Você já avaliou esta notícia?</p>
-        <button onclick="recarregarPagina()">Sim</button>
+        <p id="cni-qntd-toponimos">Possíveis nomes de lugares nesta notícia: X</p>
+        <p>Você já a avaliou?</p>
+        <button onclick="recarregarPagina()">Sim, próxima notícia</button>
         <button
-            onclick="document.getElementById('confirmar-noticia-inedita').style.display = 'none'; document.getElementById('overlay').style.display = 'none'">Não</button>
+            onclick="document.getElementById('confirmar-noticia-inedita').style.display = 'none'; document.getElementById('overlay').style.display = 'none'">Não,
+            avaliar notícia</button>
+    </div>
+
+    <!-- <button id="tutorial-btn">Tutorial</button> -->
+    <div id="tutorial-popup" class="popup">
+        <div class="popup-content">
+            <button id="fechar-tutorial-btn" class="close-button" onclick="closeTutorial()"><span
+                    class="close-icon">&#10006;</span></button>
+            <div id="tutorial">
+                <ul>
+                    <li>As notícias contém palavras que podem ou não representar nomes de lugares: </li>
+                    <img src="../static/img/tutorial1.jpeg" alt="tutorial1-imagem">
+                    <li>Estas palavras são selecionáveis, assim que você clicar nelas, serão dispostas na barra lateral
+                        a
+                        direita:
+                    </li>
+                    <img src="../static/img/tutorial2.jpeg" alt="tutorial2-imagem">
+                    <li>Esta é a barra de contribuição, nela você responderá perguntas a respeito da palavra
+                        selecionada!
+                    </li>
+                    <li>A medida que for respondendo, novas perguntas podem ou não aparecer a depender de suas respostas
+                        anteriores
+                    </li>
+                    <img src="../static/img/tutorial3.png" alt="tutorial3-imagem">
+                    <li>O botão de enviar respostas ficará verde quando perguntas o suficiente forem respondidas.</li>
+                    <li>Marcar a caixa de "Repetir resposta" significa repetir as respostas fornecidas para a palavra
+                        atual,
+                        para
+                        todas as palavras iguais a esta presentes no texto </li>
+                    <li>Ao enviar as respostas, as palavras já avaliadas ficarão verdes, sinalizando que já foram
+                        respondidas.</li>
+                    <img src="../static/img/tutorial4.jpeg" alt="">
+                    <li>No entanto, caso tenha errado algo, sinta-se livre para selecionar a mesma palavra novamente e
+                        enviar
+                        a resposta corrigida!</li>
+                    <li>A opção "Adicionar Local Não Identificado" é uma caixa de texto, a qual você pode informar algum
+                        nome
+                        de lugar
+                        que não foi previamente marcado no texto! Basta digitar o nome do local e pressionar Enter, após
+                        isso a palavra irá aparecer na barra lateral, basta responder as perguntas normalmente.</li>
+                    <li>Aoterminar de avaliar a notícia, isto é, todas as palavras marcadas do texto estarem verdes,
+                        você pode
+                        clicar em próxima notícia, para continuar contribuindo, ou em sair.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <script src="../static/script.js"></script>

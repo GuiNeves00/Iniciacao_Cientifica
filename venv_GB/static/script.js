@@ -56,12 +56,42 @@ formulario.addEventListener("submit", function (event) {
 //_________________________________________________________________
 
 // Exibir quantos possíveis toponimos existem na noticia
+// Perguntar se o usuario que avaliar a noticia ou nao
+// Carregar funcao de mostrar tutorial
 window.onload = function () {
   var qntdToponimos = toponimos.length;
-  alert("Existem " + qntdToponimos + " possíveis topônimos nesta notícia");
+  var cniQntdToponimos = document.getElementById("cni-qntd-toponimos");
+  cniQntdToponimos.textContent =
+    "Possíveis nomes de lugares nesta notícia: " + qntdToponimos;
   exibirDialogo();
+  document
+    .getElementById("tutorial-btn")
+    .addEventListener("click", openTutorial);
+  const closeButton = document.getElementById("fechar-tutorial-btn");
+  closeButton.style.visibility = "visible";
+  document
+    .getElementById("tutorial-popup")
+    .addEventListener("scroll", function () {
+      closeButton.style.visibility = this.scrollTop > 20 ? "visible" : "hidden";
+    });
+  // Event listener to close the popup when clicking outside of it
+  window.addEventListener("click", function (event) {
+    const popup = document.getElementById("tutorial-popup");
+    if (event.target === popup) {
+      closeTutorial();
+    }
+  });
+
+  // Event listener to close the popup when 'Esc' key is pressed
+  window.addEventListener("keydown", function (event) {
+    const popup = document.getElementById("tutorial-popup");
+    if (event.key === "Escape" && popup.style.display === "block") {
+      closeTutorial();
+    }
+  });
 };
 
+// Exibir caixa de dialogo perguntando se ja avaliou a noticia
 function exibirDialogo() {
   var dialogo = document.getElementById("confirmar-noticia-inedita");
   dialogo.style.display = "block";
@@ -185,6 +215,7 @@ if (teste) {
 }
 //_________________________________________________________________
 
+// SIDERBAR FIXADA
 window.addEventListener("load", () => {
   const sidebar = document.querySelector(".sidebar");
   const alturaJanela = window.innerHeight;
@@ -195,3 +226,17 @@ window.addEventListener("load", () => {
     sidebar.style.height = `${novaAlturaJanela}px`;
   });
 });
+
+// TUTORIAL POPUP
+
+// Função para abrir o popup
+function openTutorial() {
+  var popup = document.getElementById("tutorial-popup");
+  popup.style.display = "block";
+}
+
+// Função para fechar o popup
+function closeTutorial() {
+  var popup = document.getElementById("tutorial-popup");
+  popup.style.display = "none";
+}
