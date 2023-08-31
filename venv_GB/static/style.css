@@ -6,14 +6,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  /* display: grid; */
-  /* background-color: rgb(233, 239, 249); */
-  /* background-color: #8fbcbb; */
   background-color: #282a36;
 }
 
 h1 {
-  /* text-align: center; */
   grid-column: 1;
   grid-row: 1;
   place-self: center;
@@ -31,20 +27,9 @@ input:hover {
   text-align: center;
 }
 
-/* .rodape {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  place-items: center;
-} */
-
-/* .avaliar {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  grid-template-rows: 1fr;
-  gap: 10px;
-} */
-.avaliar {
+.main-container {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
   padding-right: 100px; /* Largura da sidebar + margem (320)*/
@@ -53,16 +38,23 @@ input:hover {
 
 .main-container {
   display: flex;
+=======
+>>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
   width: 100%;
 }
 
 .noticia {
   display: flex;
+<<<<<<< HEAD
+=======
+  align-items: center; /* alteracao */
+>>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
   flex: 70%;
   flex-direction: column;
   text-align: left;
   font-size: 16px;
   line-height: 1.8;
+<<<<<<< HEAD
   /* background-color: white; */
   /* background-color: #88c0d0; */
   background-color: #44475a;
@@ -71,10 +63,17 @@ input:hover {
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   /*AQUI (antes 320px) (valor bom = 360px) */
   /* ANTES 620px */
+=======
+  background-color: #282a36;
+  color: #f8f8f2;
+  border-radius: 6px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+>>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
   flex-grow: 1;
   font-family: "PlayfairDisplay-VariableFont_wght", sans-serif;
 }
 
+<<<<<<< HEAD
 .texto-noticia {
   height: 100%;
 }
@@ -82,13 +81,35 @@ input:hover {
 .sidebar {
   flex: 30%;
   position: relative;
+=======
+/* .texto-noticia {
+  height: 100%;
+  width: 58%;
+} */
+
+.texto-noticia {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 25px 50px;
+  background-color: #44475a;
+  color: #f8f8f2;
+  border-radius: 6px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  width: 35%;
+  margin: 50px 0px;
+  flex-grow: 0; /* antes 1 */
+  font-family: "PlayfairDisplay-VariableFont_wght", sans-serif;
+}
+
+.sidebar {
+  flex: 10%;
+  position: sticky;
+>>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
   top: 0;
   right: 0;
-  width: 320px; /* Ajuste a largura conforme necessário */
-  height: 90vh;
+  /* width: 320px; */
   overflow-y: auto; /* Adiciona rolagem à sidebar */
-  /* background-color: rgb(233, 239, 249); */
-  /* background-color: #88c0d0; */
   background-color: #44475a;
   padding: 20px;
   padding-top: 12px;
@@ -112,13 +133,6 @@ input:hover {
   color: #f8f8f2;
 }
 
-/* .sidebar {
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: white;
-  border-radius: 6px;
-  border: 2px solid aqua;
-} */
 .toponimo:hover {
   filter: brightness(85%);
 }
@@ -132,7 +146,6 @@ input:hover {
 #top-display {
   display: inline-block;
   text-align: center;
-  /* background-color: rgb(107, 147, 214); */
   background-color: #6272a4;
   color: #f8f8f2;
   border-radius: 8px;
@@ -146,6 +159,7 @@ input:hover {
   border: 0px solid;
   margin: 10px;
   color: #282a36;
+  background-color: #f8f8f2;
 }
 
 #pergunta-1,
@@ -162,10 +176,6 @@ a proxima ira aparecer */
 #pergunta-1 {
   display: none;
 }
-
-/* #submit {
-  display: none;
-} */
 
 #novo-toponimo-div {
   color: #f8f8f2;
@@ -244,6 +254,7 @@ a proxima ira aparecer */
 #header {
   position: sticky;
   top: 0;
+<<<<<<< HEAD
   z-index: 100;  /* Ensuring the header stays on top of other elements */
   width: 100%;
   background-color: inherit;  /* So it matches the background color of its parent */
@@ -253,6 +264,16 @@ a proxima ira aparecer */
   justify-content: space-evenly;
 
   height: 50px;
+=======
+  z-index: 100; /* garantir que a hedaer fica acima dos outros elementos */
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  height: 50px;
+  background-color: #44475a;
+  margin-bottom: 25px;
+>>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
 }
 #header button {
   background-color: #6272a4;
@@ -261,17 +282,8 @@ a proxima ira aparecer */
   border-radius: 8px;
   font-size: 16px;
   padding: 5px 10px;
+  margin: 10px 0px;
 }
-
-/* #footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 360px;
-  background-color: green;
-  height: 5vh;
-  margin-top: 25px;
-} */
 
 /* TUTORIAL */
 
@@ -284,8 +296,8 @@ a proxima ira aparecer */
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1; /* Set a lower z-index for the popup */
-  overflow: auto; /* Enable scrolling for the popup content */
+  z-index: 1;
+  overflow: auto; /* disponibilizar scroll */
 }
 
 .popup-content {
@@ -295,7 +307,7 @@ a proxima ira aparecer */
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   max-width: 80%;
-  margin: 100px auto; /* Add margin to center the popup */
+  margin: 100px auto; /* margem pra ajudar a centralizar o popup */
 }
 .popup-content li {
   color: #f8f8f2;
@@ -315,11 +327,12 @@ a proxima ira aparecer */
   border: none;
   padding: 0;
   cursor: pointer;
-  z-index: 2; /* Increase the z-index to make sure it's above the popup */
+  z-index: 2; /* aumentar o z-index pra garantir que está acima/sobrepondo o popup*/
+  padding: 30px;
 }
 
 .close-icon {
-  font-size: 36px; /* Aumente o tamanho do ícone */
+  font-size: 36px; /* tamanho do ícone */
   color: #ff5555;
 }
 

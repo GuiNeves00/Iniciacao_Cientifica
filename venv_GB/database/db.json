@@ -451,6 +451,122 @@
                         "tipo": null,
                         "localizacao": null
                     }
+                ],
+                [
+                    {
+                        "palavra": "Carlinhos",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Maia",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Teatro das Bacabeiras",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Carlinhos",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Maia",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Amapá",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Teatro das Bacabeiras",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Maia",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "mora",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Penedo",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Alagoas",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Maia",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Maia",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Carlinhos",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Maia",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Teatro das BacabeirasHora",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    }
                 ]
             ]
         },
@@ -602,7 +718,112 @@
                 "R$",
                 "Divinópolis"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Levantamento do G1",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Divinópolis",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Divinópolis",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Centro-Oeste de Minas",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Prefeitura",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Prefeitura",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Divinópolis",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Niterói",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Prefeitura",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Prefeitura",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Bairro Niterói",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Minas Gerais",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Divinópolis",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Divinópolis",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    }
+                ]
+            ]
         },
         "13": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/07/29/show-de-humor-em-macapa-leva-historias-de-ribeirinhos-da-amazonia-para-o-teatro.ghtml",
@@ -1720,7 +1941,76 @@
                 "Bacia do Rio Paranaíba",
                 "Rio Araguari"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Rio Araguari",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Pau Furado",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Parque Estadual do Pau Furado",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Bacia do Rio Araguari",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Amigos da Cachoeira",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Igam",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Instituto Mineiro de Gestão das Águas",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Bacia do Rio Paranaíba",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Rio Araguari",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    }
+                ]
+            ]
         },
         "37": {
             "url": "https://g1.globo.com/mg/centro-oeste/noticia/2018/07/23/prefeitos-da-regiao-centro-oeste-de-mg-se-reunem-em-divinopolis-para-debater-atraso-no-pagamento-do-fundeb.ghtml",

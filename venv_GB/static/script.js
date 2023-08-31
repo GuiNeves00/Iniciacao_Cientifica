@@ -239,24 +239,25 @@ function openTutorial() {
   popup.style.display = "block";
 }
 
-function openSobre() {
-  var popup = document.getElementById("sobre-popup");
-  popup.style.display = "block";
-}
-
 // Função para fechar o popup
 function closeTutorial() {
   var popup = document.getElementById("tutorial-popup");
   popup.style.display = "none";
 }
 
-function closeSobre() {
-  var popup = document.getElementById("sobre-popup");
-  popup.style.display = "none";
-}
-
+// POPUP SOBRE
 document.getElementById("sobre-btn").addEventListener("click", openSobre);
 
 document.getElementById("sobre-popup").addEventListener("scroll", function () {
   closeButton.style.visibility = this.scrollTop > 20 ? "visible" : "hidden";
 });
+
+function openSobre() {
+  var popup = document.getElementById("sobre-popup");
+  popup.style.display = "block";
+}
+
+function closeSobre() {
+  var popup = document.getElementById("sobre-popup");
+  popup.style.display = "none";
+}
