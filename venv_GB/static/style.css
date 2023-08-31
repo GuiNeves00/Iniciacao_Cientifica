@@ -1,6 +1,8 @@
 @font-face {
   font-family: "PlayfairDisplay-VariableFont_wght";
   src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-family: "Roboto-Black";
+  src: url("./fonts/Roboto-Black.ttf") format("truetype");
 }
 
 body {
@@ -13,6 +15,13 @@ h1 {
   grid-column: 1;
   grid-row: 1;
   place-self: center;
+}
+
+button {
+  font-family: "Roboto-Black", sans-serif;
+}
+input {
+  font-family: "Roboto-Black", sans-serif;
 }
 
 button:hover {
@@ -34,7 +43,7 @@ input:hover {
 
 .noticia {
   display: flex;
-  align-items: center; /* alteracao */
+  align-items: center;
   flex: 70%;
   flex-direction: column;
   text-align: left;
@@ -43,7 +52,7 @@ input:hover {
   background-color: #282a36;
   color: #f8f8f2;
   border-radius: 6px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
   flex-grow: 1;
   font-family: "PlayfairDisplay-VariableFont_wght", sans-serif;
 }
@@ -61,7 +70,7 @@ input:hover {
   background-color: #44475a;
   color: #f8f8f2;
   border-radius: 6px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
   width: 35%;
   margin: 50px 0px;
   flex-grow: 0; /* antes 1 */
@@ -78,10 +87,11 @@ input:hover {
   background-color: #44475a;
   padding: 20px;
   padding-top: 12px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 0 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 100;
 }
 .sidebar h2 {
   text-align: center;
@@ -119,6 +129,7 @@ input:hover {
 
 #submit {
   font-size: 16px;
+  height: 50px;
   padding: 15px;
   border-radius: 8px;
   border: 0px solid;
@@ -156,20 +167,16 @@ a proxima ira aparecer */
   justify-content: space-around;
   align-items: center;
   height: 20vh;
+  gap: 10px;
 }
 
 #continuar-sair button {
-  font-size: 16px;
-  margin-top: 20px;
+  font-size: 18px;
+  height: 60px;
   padding: 20px;
   border-radius: 8px;
   border: 0px solid;
-}
-#continuar {
-  margin-right: 10px;
-}
-#continuar-sair a button {
-  margin-left: 10px;
+  text-align: center;
 }
 
 #overlay {
@@ -219,14 +226,26 @@ a proxima ira aparecer */
 #header {
   position: sticky;
   top: 0;
-  z-index: 100; /* garantir que a hedaer fica acima dos outros elementos */
+  z-index: 99; /* garantir que a header fica acima dos outros elementos (exceto sidebar) */
   width: 100%;
   display: flex;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 190px;
   height: 50px;
   background-color: #44475a;
   margin-bottom: 25px;
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5); /* sombra na parte debaixo do header p1 */
+}
+/* sombra na parte de baixo do header p2 */
+#header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
 }
 #header button {
   background-color: #6272a4;
@@ -234,11 +253,10 @@ a proxima ira aparecer */
   border: 0px solid;
   border-radius: 8px;
   font-size: 16px;
+  height: 30px;
   padding: 5px 10px;
   margin: 10px 0px;
 }
-
-/* TUTORIAL */
 
 /* Estilo para o popup */
 .popup {
@@ -249,8 +267,9 @@ a proxima ira aparecer */
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 100;
   overflow: auto; /* disponibilizar scroll */
+  backdrop-filter: blur(3px);
 }
 
 .popup-content {
