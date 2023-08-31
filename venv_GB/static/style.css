@@ -29,59 +29,25 @@ input:hover {
 
 .main-container {
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-  align-items: center;
-  padding-right: 100px; /* Largura da sidebar + margem (320)*/
-  margin-bottom: 60px;
-}
-
-.main-container {
-  display: flex;
-=======
->>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
   width: 100%;
 }
 
 .noticia {
   display: flex;
-<<<<<<< HEAD
-=======
   align-items: center; /* alteracao */
->>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
   flex: 70%;
   flex-direction: column;
   text-align: left;
   font-size: 16px;
   line-height: 1.8;
-<<<<<<< HEAD
-  /* background-color: white; */
-  /* background-color: #88c0d0; */
-  background-color: #44475a;
-  color: #f8f8f2;
-  border-radius: 6px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  /*AQUI (antes 320px) (valor bom = 360px) */
-  /* ANTES 620px */
-=======
   background-color: #282a36;
   color: #f8f8f2;
   border-radius: 6px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
->>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
   flex-grow: 1;
   font-family: "PlayfairDisplay-VariableFont_wght", sans-serif;
 }
 
-<<<<<<< HEAD
-.texto-noticia {
-  height: 100%;
-}
-
-.sidebar {
-  flex: 30%;
-  position: relative;
-=======
 /* .texto-noticia {
   height: 100%;
   width: 58%;
@@ -105,7 +71,6 @@ input:hover {
 .sidebar {
   flex: 10%;
   position: sticky;
->>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
   top: 0;
   right: 0;
   /* width: 320px; */
@@ -254,17 +219,6 @@ a proxima ira aparecer */
 #header {
   position: sticky;
   top: 0;
-<<<<<<< HEAD
-  z-index: 100;  /* Ensuring the header stays on top of other elements */
-  width: 100%;
-  background-color: inherit;  /* So it matches the background color of its parent */
-
-  display: flex;
-  align-content: center;
-  justify-content: space-evenly;
-
-  height: 50px;
-=======
   z-index: 100; /* garantir que a hedaer fica acima dos outros elementos */
   width: 100%;
   display: flex;
@@ -273,7 +227,6 @@ a proxima ira aparecer */
   height: 50px;
   background-color: #44475a;
   margin-bottom: 25px;
->>>>>>> 89377b7 (mais ajutes visuais na tela principal (ver. SEIC))
 }
 #header button {
   background-color: #6272a4;

@@ -1,16 +1,25 @@
 [
     {
-        "palavra": "Macapá",
+        "palavra": "Uberlândia",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "Brasil"
+    },
+    {
+        "palavra": "Uberlândia",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "Brasil"
+    },
+    {},
+    {
+        "palavra": "Uberlândia",
         "is_toponimo": "sim",
         "tipo": "cidade",
         "localizacao": "Brasil"
     },
     {},
     {},
-    {
-        "palavra": "Macapá",
-        "is_toponimo": "sim",
-        "tipo": "cidade",
-        "localizacao": "Brasil"
-    }
+    {},
+    {}
 ]
