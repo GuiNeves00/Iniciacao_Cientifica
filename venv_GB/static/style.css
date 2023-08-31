@@ -51,30 +51,37 @@ input:hover {
   margin-bottom: 60px;
 }
 
-.wrapper {
+.main-container {
   display: flex;
-  align-items: center;
+  width: 100%;
 }
 
 .noticia {
+  display: flex;
+  flex: 70%;
+  flex-direction: column;
   text-align: left;
   font-size: 16px;
   line-height: 1.8;
-  padding: 25px 50px;
   /* background-color: white; */
   /* background-color: #88c0d0; */
   background-color: #44475a;
   color: #f8f8f2;
   border-radius: 6px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  max-width: calc(100% - 320px); /*AQUI (antes 320px) (valor bom = 360px) */
-  margin: 0 calc((100% - 620px) / 2); /* ANTES 620px */
+  /*AQUI (antes 320px) (valor bom = 360px) */
+  /* ANTES 620px */
   flex-grow: 1;
   font-family: "PlayfairDisplay-VariableFont_wght", sans-serif;
 }
 
+.texto-noticia {
+  height: 100%;
+}
+
 .sidebar {
-  position: fixed;
+  flex: 30%;
+  position: relative;
   top: 0;
   right: 0;
   width: 320px; /* Ajuste a largura conforme necessário */
@@ -235,14 +242,17 @@ a proxima ira aparecer */
 }
 
 #header {
-  background-color: #44475a;
+  position: sticky;
+  top: 0;
+  z-index: 100;  /* Ensuring the header stays on top of other elements */
+  width: 100%;
+  background-color: inherit;  /* So it matches the background color of its parent */
+
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 50px;
-  height: 5vh;
-  width: calc(100% - 360px);
-  border-radius: 6px;
+  align-content: center;
+  justify-content: space-evenly;
+
+  height: 50px;
 }
 #header button {
   background-color: #6272a4;
