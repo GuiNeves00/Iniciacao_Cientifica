@@ -1,0 +1,55 @@
+[
+    {
+        "palavra": "Sine",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Macapá",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "Brasil"
+    },
+    {},
+    {
+        "palavra": "Sine",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Macapá",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "Brasil"
+    },
+    {
+        "palavra": "Sine",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Sine",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {},
+    {
+        "palavra": "Sine",
+        "is_toponimo": "nao",
+        "tipo": "",
+        "localizacao": ""
+    },
+    {
+        "palavra": "Macapá",
+        "is_toponimo": "sim",
+        "tipo": "cidade",
+        "localizacao": "Brasil"
+    },
+    {},
+    {},
+    {}
+]

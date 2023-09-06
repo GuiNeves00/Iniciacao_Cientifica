@@ -215,12 +215,14 @@ a proxima ira aparecer */
 #confirmar-noticia-inedita button {
   padding: 10px 20px;
   border: none;
-  margin: 10px;
+  margin: 10px 0px;
   background-color: #6272a4;
   color: white;
   cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
+  height: 50px;
+  width: inherit;
 }
 
 #header {
@@ -289,6 +291,8 @@ a proxima ira aparecer */
   max-width: 100%;
   height: auto;
   margin: 10px 0;
+  border: 1px solid #f8f8f2;
+  border-radius: 5px;
 }
 
 .close-button {
@@ -327,4 +331,48 @@ a proxima ira aparecer */
 #sobre-popup a {
   color: #bd93f9;
   text-decoration: italic;
+}
+
+#tutorial {
+  text-align: center;
+}
+#tutorial ul {
+  list-style-type: none;
+  padding: 0;
+}
+#tutorial li {
+  margin: 10px 0;
+}
+#tutorial strong {
+  color: #bd93f9;
+}
+.destaque-tutorial {
+  color: #50fa7b;
+}
+summary {
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  color: #f8f8f2;
+  font-size: 1.5em; /* Tamanho da fonte semelhante a um cabeçalho h3 */
+  font-weight: bold; /* Deixando o texto em negrito */
+  margin: 0; /* Removendo margens para um espaçamento mais próximo ao conteúdo */
+}
+
+details {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  outline: none;
+}
+
+/* Estilo quando o <details> está aberto */
+details[open] summary {
+  border-bottom: 1px solid #333; /* Adicionando uma linha horizontal quando está aberto */
+}
+
+/* Estilo quando o mouse passa por cima */
+summary:hover {
+  text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
 }

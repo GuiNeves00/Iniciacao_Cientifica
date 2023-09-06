@@ -366,75 +366,82 @@
         </div>
 
     </div>
-    <!-- <div id="footer">Projeto de Iniciação Científica -- "Geração Semiautomática de Bases de Dados Rotuladas
-        Geograficamente</div> -->
 
     <div id="overlay"></div>
 
     <div id="confirmar-noticia-inedita">
         <p id="cni-qntd-toponimos">Possíveis nomes de lugares nesta notícia: X</p>
         <p>Você já a avaliou?</p>
-        <button onclick="recarregarPagina()">Sim, próxima notícia</button>
+        <button onclick="recarregarPagina()">Sim! Próxima notícia</button>
         <button
-            onclick="document.getElementById('confirmar-noticia-inedita').style.display = 'none'; document.getElementById('overlay').style.display = 'none'">Não,
-            avaliar notícia</button>
+            onclick="document.getElementById('confirmar-noticia-inedita').style.display = 'none'; document.getElementById('overlay').style.display = 'none'">Não!
+            Avaliar agora</button>
     </div>
 
-    <!-- <button id="tutorial-btn">Tutorial</button> -->
     <div id="tutorial-popup" class="popup">
         <div class="popup-content">
             <button id="fechar-tutorial-btn" class="close-button" onclick="closeTutorial()"><span
                     class="close-icon">&#10006;</span></button>
             <div id="tutorial">
-                <ul>
-                    <li>As notícias contém palavras que podem ou não representar nomes de lugares: </li>
-                    <img src="../static/img/tutorial1.jpeg" alt="tutorial1-imagem">
-                    <li>Estas palavras são selecionáveis, assim que você clicar nelas, serão dispostas na barra
-                        lateral
-                        a
-                        direita:
-                    </li>
-                    <img src="../static/img/tutorial2.jpeg" alt="tutorial2-imagem">
-                    <li>Esta é a barra de contribuição, nela você responderá perguntas a respeito da palavra
-                        selecionada!
-                    </li>
-                    <li>A medida que for respondendo, novas perguntas podem ou não aparecer a depender de suas
-                        respostas
-                        anteriores
-                    </li>
-                    <img src="../static/img/tutorial3.png" alt="tutorial3-imagem">
-                    <li>O botão de enviar respostas ficará verde quando perguntas o suficiente forem
-                        respondidas.
-                    </li>
-                    <li>Marcar a caixa de "Repetir resposta" significa repetir as respostas fornecidas para a
-                        palavra
-                        atual,
-                        para
-                        todas as palavras iguais a esta presentes no texto </li>
-                    <li>Ao enviar as respostas, as palavras já avaliadas ficarão verdes, sinalizando que já
-                        foram
-                        respondidas.</li>
-                    <img src="../static/img/tutorial4.jpeg" alt="">
-                    <li>No entanto, caso tenha errado algo, sinta-se livre para selecionar a mesma palavra
-                        novamente
-                        e
-                        enviar
-                        a resposta corrigida!</li>
-                    <li>A opção "Adicionar Local Não Identificado" é uma caixa de texto, a qual você pode
-                        informar
-                        algum
-                        nome
-                        de lugar
-                        que não foi previamente marcado no texto! Basta digitar o nome do local e pressionar
-                        Enter,
-                        após
-                        isso a palavra irá aparecer na barra lateral, basta responder as perguntas normalmente.
-                    </li>
-                    <li>Aoterminar de avaliar a notícia, isto é, todas as palavras marcadas do texto estarem
-                        verdes,
-                        você pode
-                        clicar em próxima notícia, para continuar contribuindo, ou em sair.</li>
-                </ul>
+                <details class="guia-rapido">
+                    <summary>Guia rápido de uso</summary>
+                    <ul>
+                        <li><strong>Passo 1:</strong> Nos textos, você encontrará palavras que podem <span
+                                class="destaque-tutorial">representar lugares</span>.
+                        </li>
+                        <img src="../static/img/tutorial1.jpeg" alt="Tutorial Imagem 1">
+
+                        <li><strong>Passo 2:</strong> Clique em uma palavra para <span
+                                class="destaque-tutorial">selecioná-la</span>; ela aparecerá na barra
+                            lateral à direita.</li>
+                        <img src="../static/img/tutorial2.jpeg" alt="Tutorial Imagem 2">
+
+                        <li><strong>Passo 3:</strong> Use a <span class="destaque-tutorial">barra de contribuição</span>
+                            para responder perguntas sobre a palavra
+                            selecionada.
+                            <br>
+                            À medida que responde, novas perguntas podem aparecer com base nas
+                            respostas anteriores.
+                        </li>
+
+
+                        <img src="../static/img/tutorial3.png" alt="Tutorial Imagem 3">
+
+                        <li><strong>Passo 5:</strong> O botão de <span class="destaque-tutorial">"Enviar
+                                Respostas"</span>
+                            ficará verde quando você responder o
+                            suficiente.
+                            <br>
+                            Marque <span class="destaque-tutorial">"Repetir Resposta"</span> para
+                            aplicar a mesma resposta a todas as
+                            palavras iguais no texto.
+                            <br>
+                            Palavras já avaliadas ficarão <span class="destaque-tutorial">verdes</span> após o
+                            envio das respostas.
+                        </li>
+                        <img src="../static/img/tutorial4.jpeg" alt="Tutorial Imagem 4">
+
+                        <li><strong>Passo 8:</strong> Se cometer um erro, selecione a mesma palavra novamente para <span
+                                class="destaque-tutorial">corrigir
+                                a resposta<span class="destaque-tutorial">.</li>
+
+                        <li><strong>Passo 9:</strong> Encontrou um nome de lugar que não estava marcado no texto?
+                            <br>
+                            Informe este lugar em <span class="destaque-tutorial">"Adicionar Local Não
+                                Identificado"</span> na barra de contribuição.
+                        </li>
+
+                        <li><strong>Passo 10:</strong> Ao terminar de avaliar uma notícia, clique em <span
+                                class="destaque-tutorial">"Próxima Notícia"</span> para
+                            continuar ou <span class="destaque-tutorial">"Sair"</span>.
+                        </li>
+                    </ul>
+                </details>
+                <hr>
+                <details class="guia-toponimos">
+                    <summary>Respondendo Corretamente</summary>
+                    WIP.
+                </details>
             </div>
         </div>
     </div>

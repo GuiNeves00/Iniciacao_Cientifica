@@ -61,8 +61,10 @@ formulario.addEventListener("submit", function (event) {
 window.onload = function () {
   var qntdToponimos = toponimos.length;
   var cniQntdToponimos = document.getElementById("cni-qntd-toponimos");
-  cniQntdToponimos.textContent =
-    "Possíveis nomes de lugares nesta notícia: " + qntdToponimos;
+  cniQntdToponimos.innerHTML =
+    "Possíveis nomes de lugares nesta notícia: <strong>" +
+    qntdToponimos +
+    "</strong>";
   exibirDialogo();
 
   document
