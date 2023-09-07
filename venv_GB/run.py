@@ -29,15 +29,20 @@ def home():
 @app.route('/evaluate')
 def evaluate():
     try:
+        if len(lista_noticias) == len(list(range(1, db_size + 1))):
+            tutorial = 1;
+        else:
+            tutorial = 0;
         noticia_avaliar = random.choice(lista_noticias)
         lista_noticias.remove(noticia_avaliar)
         noticia = db.get_data(noticia_avaliar)
+
 
         texto_noticia = noticia['texto']
         toponimos = geoparsing.geoparsing_spacy(texto_noticia)
         txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
     except IndexError as error:
-        return render_template('evaluate.html', texto="", flag=1)
+        return render_template('evaluate.html', texto="", flag=1, tutorial=tutorial)
 
     # links = scrap.obtem_links_g1()
     # pubdates = scrap.obtem_pubdate_g1()
@@ -46,7 +51,7 @@ def evaluate():
     # toponimos = geoparsing.geoparsing_spacy(textos[1])
     # txt_exibir = geoparsing.processar_txt(textos, toponimos)
         
-    return render_template('evaluate.html', texto=txt_exibir, id_noticia_avaliada=noticia_avaliar, flag=0)
+    return render_template('evaluate.html', texto=txt_exibir, id_noticia_avaliada=noticia_avaliar, flag=0, tutorial=tutorial)
 
 @app.route('/reset')
 def reset():

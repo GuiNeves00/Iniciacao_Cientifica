@@ -58,17 +58,25 @@ formulario.addEventListener("submit", function (event) {
 // Exibir quantos possíveis toponimos existem na noticia
 // Perguntar se o usuario que avaliar a noticia ou nao
 // Carregar funcao de mostrar tutorial
-window.onload = function (flag) {
+window.onload = function (flag, tutorial) {
   flag = parseInt(
     document.getElementById("check-fim").getAttribute("data-flag")
   );
+  tutorial = document
+    .getElementById("check-tutorial")
+    .getAttribute("data-flag");
+  if (tutorial == 1) {
+    openTutorial();
+    dialogo.style.display = "none";
+  }
+
   console.log("valor de flag em window.onload: " + flag);
   var qntdToponimos = toponimos.length;
   var cniQntdToponimos = document.getElementById("cni-qntd-toponimos");
   cniQntdToponimos.innerHTML =
     "Possíveis nomes de lugares nesta notícia: <strong>" +
     qntdToponimos +
-    "</strong>";
+    "</strong> <br> Você já a avaliou?";
 
   if (flag == 1) {
     exibirDialogo(1);
@@ -267,6 +275,7 @@ function openTutorial() {
 
 // Função para fechar o popup
 function closeTutorial() {
+  console.log("testeeeee");
   var popup = document.getElementById("tutorial-popup");
   popup.style.display = "none";
 }

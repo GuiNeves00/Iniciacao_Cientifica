@@ -346,6 +346,11 @@ a proxima ira aparecer */
 #tutorial strong {
   color: #bd93f9;
 }
+#tutorial h1 {
+  color: #50fa7b;
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
 .destaque-tutorial {
   color: #50fa7b;
 }
