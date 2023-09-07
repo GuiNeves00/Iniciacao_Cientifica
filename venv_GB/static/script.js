@@ -58,14 +58,23 @@ formulario.addEventListener("submit", function (event) {
 // Exibir quantos possíveis toponimos existem na noticia
 // Perguntar se o usuario que avaliar a noticia ou nao
 // Carregar funcao de mostrar tutorial
-window.onload = function () {
+window.onload = function (flag) {
+  flag = parseInt(
+    document.getElementById("check-fim").getAttribute("data-flag")
+  );
+  console.log("valor de flag em window.onload: " + flag);
   var qntdToponimos = toponimos.length;
   var cniQntdToponimos = document.getElementById("cni-qntd-toponimos");
   cniQntdToponimos.innerHTML =
     "Possíveis nomes de lugares nesta notícia: <strong>" +
     qntdToponimos +
     "</strong>";
-  exibirDialogo();
+
+  if (flag == 1) {
+    exibirDialogo(1);
+  } else {
+    exibirDialogo(0);
+  }
 
   document
     .getElementById("tutorial-btn")
@@ -98,14 +107,29 @@ window.onload = function () {
 };
 
 // Exibir caixa de dialogo perguntando se ja avaliou a noticia
-function exibirDialogo() {
+function exibirDialogo(flag) {
   var dialogo = document.getElementById("confirmar-noticia-inedita");
   dialogo.style.display = "block";
   overlay.style.display = "block";
+  var mensagem = document.getElementById("cni-qntd-toponimos");
+  if (flag == 1) {
+    // dialogo.innerHTML = "Testando pelo JS";
+    mensagem.innerHTML =
+      "Muito obrigado &#128516; <br> Você avaliou todos os textos disponíveis no momento. <br> Clique no botão abaixo se deseja avaliá-los novamente. Caso contrário, sinta-se livre para fechar o site!";
+    var botaoRedirecionar = document.getElementById("btn-sim");
+    botaoRedirecionar.innerHTML = "Avaliar novamente";
+    botaoRedirecionar.onclick = redirecionarFlask;
+    var botaoFechar = document.getElementById("btn-nao");
+    botaoFechar.style.display = "none";
+  }
 }
 
 function recarregarPagina() {
   location.reload();
+}
+
+function redirecionarFlask() {
+  window.location.href = "/reset";
 }
 
 //_________________________________________________________________
@@ -263,3 +287,7 @@ function closeSobre() {
   var popup = document.getElementById("sobre-popup");
   popup.style.display = "none";
 }
+
+// Verifica se o usuário ja avaliou todas as noticias, atraves da flag
+// window.addEventListener("load", checkFim());
+// function checkFim() {}

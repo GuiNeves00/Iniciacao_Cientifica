@@ -18,7 +18,76 @@
                 "Centro",
                 "Amapá"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Mercado Central",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Evento",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Secretaria",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Mercado Central",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Secretaria",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Fundação Municipal de Cultura",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Secretaria",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "maioHorário",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Avenida Feliciano Coelho",
+                        "is_toponimo": "sim",
+                        "tipo": "avenida",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Amapá",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    }
+                ]
+            ]
         },
         "2": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2023/05/03/maio-amarelo-tem-acoes-em-escolas-e-passeio-ciclistico-para-alertar-pedestres-e-motoristas-no-ap.ghtml",
@@ -45,7 +114,130 @@
                 "Samu",
                 "Amapá"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Amarelo",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Amarelo",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Amapá",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Departamento Estadual de Trânsito do Amapá",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Detran-AP",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Gonçalves",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Detran-AP",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Rodovia Duca Serra",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Zona Oeste",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "rodovia Duca Serra",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Gonçalves",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Brasil",
+                        "is_toponimo": "sim",
+                        "tipo": "país",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Departamento Estadual de Trânsito",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Amapá",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Detran-AP",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Polícia Militar",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Polícia Rodoviária Federal",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Samu",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Amapá",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    }
+                ]
+            ]
         },
         "3": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2023/04/28/criancas-autistas-participam-de-sessao-de-cinoterapia-com-caes-do-bope-em-macapa.ghtml",
@@ -2307,6 +2499,68 @@
                     },
                     {
                         "palavra": "testando",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    }
+                ],
+                [
+                    {
+                        "palavra": "Procon",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Araxá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Rua Perdizes",
+                        "is_toponimo": "sim",
+                        "tipo": "rua",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Procon",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Araxá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Alto Paranaíba",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Rua Perdizes",
+                        "is_toponimo": "sim",
+                        "tipo": "rua",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Centro",
+                        "is_toponimo": "sim",
+                        "tipo": "bairro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "testando2",
                         "is_toponimo": "nao",
                         "tipo": "",
                         "localizacao": ""

@@ -370,10 +370,11 @@
     <div id="overlay"></div>
 
     <div id="confirmar-noticia-inedita">
-        <p id="cni-qntd-toponimos">Possíveis nomes de lugares nesta notícia: X</p>
-        <p>Você já a avaliou?</p>
-        <button onclick="recarregarPagina()">Sim! Próxima notícia</button>
-        <button
+        <p id="cni-qntd-toponimos">Possíveis nomes de lugares nesta notícia: X <br> Você já a avaliou?
+        </p>
+
+        <button id="btn-sim" onclick="recarregarPagina()">Sim! Próxima notícia</button>
+        <button id="btn-nao"
             onclick="document.getElementById('confirmar-noticia-inedita').style.display = 'none'; document.getElementById('overlay').style.display = 'none'">Não!
             Avaliar agora</button>
     </div>
@@ -465,6 +466,9 @@
             <p>Desenvolvido por: <a href="mailto:guilherme.lns@aluno.ufop.edu.br">Guilherme Neves</a></p>
             <p>Orientado por: <a href="mailto:bruno@ufop.edu.br">Bruno Rabello</a></p>
         </div>
+    </div>
+
+    <div id="check-fim" data-flag="{{ flag }}">
     </div>
 
     <script src="../static/script.js"></script>

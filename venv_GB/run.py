@@ -22,10 +22,9 @@ lista_noticias = list(range(1, db_size + 1))
 formData = {}
 
 
-@app.route('/index')
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return redirect(url_for('evaluate'))
 
 @app.route('/evaluate')
 def evaluate():
@@ -38,7 +37,7 @@ def evaluate():
         toponimos = geoparsing.geoparsing_spacy(texto_noticia)
         txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
     except IndexError as error:
-        return redirect(url_for('obrigado'))
+        return render_template('evaluate.html', texto="", flag=1)
 
     # links = scrap.obtem_links_g1()
     # pubdates = scrap.obtem_pubdate_g1()
@@ -47,11 +46,13 @@ def evaluate():
     # toponimos = geoparsing.geoparsing_spacy(textos[1])
     # txt_exibir = geoparsing.processar_txt(textos, toponimos)
         
-    return render_template('evaluate.html', texto=txt_exibir, toponimos=toponimos, id_noticia_avaliada=noticia_avaliar)
+    return render_template('evaluate.html', texto=txt_exibir, id_noticia_avaliada=noticia_avaliar, flag=0)
 
-@app.route('/obrigado')
-def obrigado():
-    return render_template('obrigado.html')
+@app.route('/reset')
+def reset():
+    global lista_noticias
+    lista_noticias = list(range(1, db_size + 1));
+    return redirect(url_for('evaluate'))
 
 @app.route('/processamento', methods=['POST'])
 def processamento():
