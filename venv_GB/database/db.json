@@ -18,76 +18,7 @@
                 "Centro",
                 "Amapá"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Mercado Central",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Evento",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Secretaria",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Mercado Central",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Secretaria",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Fundação Municipal de Cultura",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Secretaria",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "maioHorário",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Avenida Feliciano Coelho",
-                        "is_toponimo": "sim",
-                        "tipo": "avenida",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Amapá",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "2": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2023/05/03/maio-amarelo-tem-acoes-em-escolas-e-passeio-ciclistico-para-alertar-pedestres-e-motoristas-no-ap.ghtml",
@@ -114,130 +45,7 @@
                 "Samu",
                 "Amapá"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Amarelo",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Amarelo",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Amapá",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Departamento Estadual de Trânsito do Amapá",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Detran-AP",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Gonçalves",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Detran-AP",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Rodovia Duca Serra",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Zona Oeste",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "rodovia Duca Serra",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Gonçalves",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Brasil",
-                        "is_toponimo": "sim",
-                        "tipo": "país",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Departamento Estadual de Trânsito",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Amapá",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Detran-AP",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Polícia Militar",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Polícia Rodoviária Federal",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Samu",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Amapá",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "3": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2023/04/28/criancas-autistas-participam-de-sessao-de-cinoterapia-com-caes-do-bope-em-macapa.ghtml",
@@ -288,60 +96,7 @@
                 "Ifap",
                 "Ifap"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Ifap",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "AP"
-                    },
-                    {
-                        "palavra": "Ibama",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    }
-                ],
-                [
-                    {
-                        "palavra": "Ifap",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "AP"
-                    },
-                    {
-                        "palavra": "Ibama",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Teste",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Instituto Federal do Amapá",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "5": {
             "url": "https://g1.globo.com/ce/ceara/noticia/2021/10/20/homem-e-condenado-a-50-anos-de-prisao-por-assassinato-de-duas-criancas-em-vicosa-do-ceara.ghtml",
@@ -361,7 +116,70 @@
                 "Fórum Municipal",
                 "Ceará"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Viçosa do Ceará",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Tribunal do Júri",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Viçosa do Ceará",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Penitenciária Industrial e Regional de Sobral",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Viçosa do Ceará",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Inharim",
+                        "is_toponimo": "sim",
+                        "tipo": "outro",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Viçosa do Ceará",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Viçosa do Ceará",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Fórum Municipal",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Ceará",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    }
+                ]
+            ]
         },
         "6": {
             "url": "https://g1.globo.com/ma/maranhao/noticia/2020/12/04/justica-determina-o-afastamento-de-sydnei-pereira-da-prefeitura-de-anajatuba-no-maranhao.ghtml",
@@ -445,46 +263,7 @@
                 "Complexo Cidade das Águas",
                 "R$"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Cidade das Águas em Frutal",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "MPMG",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Estado",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Águas",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Complexo Cidade das Águas",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Frutal",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "8": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/08/18/carlinhos-maia-apresenta-show-de-humor-mas-carlos-pela-primeira-vez-no-ap.ghtml",
@@ -509,258 +288,7 @@
                 "Macapá",
                 "Teatro das BacabeirasHora"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Levantamento do G1",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "MG",
-                        "is_toponimo": true,
-                        "tipo": "unidade-federativa",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Cidade",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Encontro de Bateristas do Triângulo",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Visitações",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Sesc",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "cabo Marcelo",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Corpo",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Viemos",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Governo",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Bope",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Justiça",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Ingressos",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Estadual",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "PM",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Banana",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Amigos da Cachoeira",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Estado",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Carlinhos",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "testeTNI",
-                        "is_toponimo": true,
-                        "tipo": "zona",
-                        "localizacao": "AC"
-                    },
-                    {
-                        "palavra": "Maia",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    }
-                ],
-                [
-                    {
-                        "palavra": "Carlinhos",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Maia",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Teatro das Bacabeiras",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Carlinhos",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Maia",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Amapá",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Teatro das Bacabeiras",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Maia",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "mora",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Penedo",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Alagoas",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Maia",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Maia",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Carlinhos",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Maia",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Teatro das BacabeirasHora",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "9": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/08/17/michele-maycoth-interpreta-sucessos-de-maria-gadu-em-noite-romantica-no-ap.ghtml",
@@ -780,64 +308,7 @@
                 "Norte Rock",
                 "Villa Nova Shopping"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Evento",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Zona Central",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Zona Central",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Zona Central",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Avenida José Antônio Siqueira",
-                        "is_toponimo": "sim",
-                        "tipo": "avenida",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Norte Rock",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Villa Nova Shopping",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "10": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/08/08/exposicao-minha-aldeia-reune-fotografias-inspiradas-no-cotidiano-amapaense.ghtml",
@@ -910,112 +381,7 @@
                 "R$",
                 "Divinópolis"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Levantamento do G1",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Divinópolis",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Divinópolis",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Centro-Oeste de Minas",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Prefeitura",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Prefeitura",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Divinópolis",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Niterói",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Prefeitura",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Prefeitura",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Bairro Niterói",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Minas Gerais",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Divinópolis",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Divinópolis",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "13": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/07/29/show-de-humor-em-macapa-leva-historias-de-ribeirinhos-da-amazonia-para-o-teatro.ghtml",
@@ -1042,34 +408,7 @@
                 "Auditório do SebraeEntrada",
                 "Teatro das BacabeirasIngresso"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "AP"
-                    },
-                    {
-                        "palavra": "Amazônia",
-                        "is_toponimo": true,
-                        "tipo": "outro",
-                        "localizacao": "AM"
-                    },
-                    {
-                        "palavra": "Alcântara",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Teatro das Bacabeiras",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "14": {
             "url": "https://g1.globo.com/rr/roraima/noticia/2018/07/26/sem-dinheiro-venezuelanos-acampam-as-margens-de-rodovia-na-fronteira-do-brasil-aqui-pelo-menos-temos-comida.ghtml",
@@ -1144,82 +483,7 @@
                 "Triângulo Mineiro e Alto Paranaíba",
                 "Romaria"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "BR-365",
-                        "is_toponimo": "nao-sei",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Patos de Minas",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "BR-365",
-                        "is_toponimo": "nao-sei",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Santa de Patos",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Patos de Minas",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Patos de Minas",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Romaria",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "BR-365",
-                        "is_toponimo": "nao-sei",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Triângulo Mineiro e Alto Paranaíba",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "TO"
-                    },
-                    {
-                        "palavra": "Romaria",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "testando",
-                        "is_toponimo": "sim",
-                        "tipo": "continente",
-                        "localizacao": "AP"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "16": {
             "url": "https://g1.globo.com/ro/rondonia/noticia/2018/07/25/quilo-do-pirarucu-e-vendido-em-rondonia-por-r-936-no-valor-medio.ghtml",
@@ -1276,22 +540,7 @@
                 "Carteira de Trabalho",
                 "RG"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Sine",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "AP"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "18": {
             "url": "https://g1.globo.com/ap/amapa/noticia/2018/07/23/com-surto-na-regiao-norte-campanha-contra-o-sarampo-no-ap-comeca-em-agosto.ghtml",
@@ -1313,16 +562,7 @@
                 "Macapá",
                 "Amapá"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "região Norte",
-                        "is_toponimo": true,
-                        "tipo": "zona",
-                        "localizacao": "TO"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "19": {
             "url": "https://g1.globo.com/mg/zona-da-mata/noticia/2018/07/23/policia-civil-de-juiz-de-fora-recebe-denuncia-de-mais-uma-empresa-que-teve-conteineres-desviados.ghtml",
@@ -1401,106 +641,7 @@
                 "Afuá",
                 "Amapá"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "PA",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Afuá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Pará",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Justiça",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Santa Inês",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Afuá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Pará",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Justiça",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Santa Inês",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Justiça",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Amapá",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Afuá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Amapá",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "testeTNI",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "22": {
             "url": "https://g1.globo.com/ce/ceara/noticia/2018/07/23/ceara-tem-66-municipios-com-emergencia-reconhecida-pelo-governo-federal.ghtml",
@@ -1567,82 +708,7 @@
                 "Santa Inês",
                 "São Luís"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Laudo",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "São Luís",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Laudo",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "São Luís",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Secretaria de Meio Ambiente do Maranhão",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "São Luís",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "São Luís",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Ponta d'Areia",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Calhau",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "São Marcos",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Santa Inês",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "São Luís",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "24": {
             "url": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2018/07/23/bombeiros-registram-fogo-em-vegetacao-no-bairro-industrial-em-uberlandia.ghtml",
@@ -1660,140 +726,7 @@
                 "PM",
                 "Dmae"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Bombeiros",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Distrito Industrial",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    }
-                ],
-                [
-                    {
-                        "palavra": "Bombeiros",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Distrito Industrial",
-                        "is_toponimo": "nao-sei",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Bombeiros",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Distrito Industrial de Uberlândia",
-                        "is_toponimo": "nao-sei",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Norte",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Polícia Militar",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "PM",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Dmae",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    }
-                ],
-                [
-                    {
-                        "palavra": "Procon",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Araxá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Rua Perdizes",
-                        "is_toponimo": "sim",
-                        "tipo": "rua",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Procon",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Araxá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Alto Paranaíba",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Rua Perdizes",
-                        "is_toponimo": "sim",
-                        "tipo": "rua",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "25": {
             "url": "https://g1.globo.com/ro/ji-parana-regiao-central/noticia/2018/07/23/municipios-de-rondonia-se-preparam-para-extingir-lixoes-a-ceu-aberto.ghtml",
@@ -1873,58 +806,7 @@
                 "Ministério",
                 "Ministério Público"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Beberibe",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Ceará",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Beberibe",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Ceará",
-                        "is_toponimo": "sim",
-                        "tipo": "unidade-federativa",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Ministério Público do Ceará",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Ministério",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Beberibe",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Ministério Público",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "28": {
             "url": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2018/07/23/um-ano-apos-anuncio-videomonitoramento-no-parque-do-sabia-em-uberlandia-ainda-nao-e-concluido.ghtml",
@@ -1961,34 +843,7 @@
                 "Zona Oeste",
                 "Macapá"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Iapen",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Zona Oeste",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Macapá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "30": {
             "url": "https://g1.globo.com/mg/centro-oeste/noticia/2018/07/23/corpo-e-encontrado-em-araujos-mg.ghtml",
@@ -2025,78 +880,7 @@
                 "Saudade da Minha Terra",
                 "Belmonte"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    }
-                ],
-                [
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": "nao-sei",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Brasil",
-                        "is_toponimo": "sim",
-                        "tipo": "país",
-                        "localizacao": "DF"
-                    },
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Brasil",
-                        "is_toponimo": "sim",
-                        "tipo": "país",
-                        "localizacao": "DF"
-                    },
-                    {
-                        "palavra": "Ginásio do Sabiazinho",
-                        "is_toponimo": "sim",
-                        "tipo": "rua",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Saudade da Minha Terra",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Belmonte",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "testando",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MS"
-                    },
-                    {
-                        "palavra": "vitória",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "ES"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "32": {
             "url": "https://g1.globo.com/mg/triangulo-mineiro/noticia/2018/07/23/umidade-relativa-do-ar-pode-chegar-a-20-em-cidades-do-triangulo-mineiro-e-alto-paranaiba.ghtml",
@@ -2109,22 +893,7 @@
                 "Condição",
                 "Triângulo Mineiro e Alto Paranaíba"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Triângulo Mineiro e Alto Paranaíba",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Condição",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "33": {
             "url": "https://g1.globo.com/ce/ceara/noticia/2018/07/23/filme-de-terror-diz-policial-que-resgatou-animais-abandonados-em-casa-no-ceara.ghtml",
@@ -2144,28 +913,7 @@
                 "Distrito Policial",
                 "Praia do Futuro"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Ceará",
-                        "is_toponimo": true,
-                        "tipo": "unidade-federativa",
-                        "localizacao": "CE"
-                    },
-                    {
-                        "palavra": "testeTNI",
-                        "is_toponimo": true,
-                        "tipo": "zona",
-                        "localizacao": "AC"
-                    },
-                    {
-                        "palavra": "Fortaleza",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "CE"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "34": {
             "url": "https://g1.globo.com/mg/zona-da-mata/noticia/2018/07/23/ceu-nublado-marca-inicio-da-semana-em-cidades-da-zona-da-mata-e-campo-das-vertentes.ghtml",
@@ -2180,40 +928,7 @@
                 "Zona da Mata",
                 "Campo das Vertentes"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Zona da Mata",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Campo das Vertentes",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Confira",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Zona da Mata",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Campo das Vertentes",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "35": {
             "url": "https://g1.globo.com/mg/centro-oeste/noticia/2018/07/23/previsao-e-de-nevoa-seca-e-ceu-nublado-durante-a-semana-no-centro-oeste-de-mg.ghtml",
@@ -2249,76 +964,7 @@
                 "Bacia do Rio Paranaíba",
                 "Rio Araguari"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Rio Araguari",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Pau Furado",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Parque Estadual do Pau Furado",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Uberlândia",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Bacia do Rio Araguari",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Amigos da Cachoeira",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Igam",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Instituto Mineiro de Gestão das Águas",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Bacia do Rio Paranaíba",
-                        "is_toponimo": "sim",
-                        "tipo": "zona-região",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Rio Araguari",
-                        "is_toponimo": "sim",
-                        "tipo": "outro",
-                        "localizacao": "Brasil"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "37": {
             "url": "https://g1.globo.com/mg/centro-oeste/noticia/2018/07/23/prefeitos-da-regiao-centro-oeste-de-mg-se-reunem-em-divinopolis-para-debater-atraso-no-pagamento-do-fundeb.ghtml",
@@ -2415,158 +1061,7 @@
                 "Rua Perdizes",
                 "Centro"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Procon",
-                        "is_toponimo": false,
-                        "tipo": null,
-                        "localizacao": null
-                    },
-                    {
-                        "palavra": "Araxá",
-                        "is_toponimo": true,
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Rua Perdizes",
-                        "is_toponimo": true,
-                        "tipo": "rua",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": true,
-                        "tipo": "bairro",
-                        "localizacao": "MG"
-                    }
-                ],
-                [
-                    {
-                        "palavra": "Procon",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Araxá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Rua Perdizes",
-                        "is_toponimo": "sim",
-                        "tipo": "rua",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Procon",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Araxá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Alto Paranaíba",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Rua Perdizes",
-                        "is_toponimo": "sim",
-                        "tipo": "rua",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "MG"
-                    },
-                    {
-                        "palavra": "testando",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    }
-                ],
-                [
-                    {
-                        "palavra": "Procon",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Araxá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Rua Perdizes",
-                        "is_toponimo": "sim",
-                        "tipo": "rua",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Procon",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Araxá",
-                        "is_toponimo": "sim",
-                        "tipo": "cidade",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Alto Paranaíba",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    },
-                    {
-                        "palavra": "Rua Perdizes",
-                        "is_toponimo": "sim",
-                        "tipo": "rua",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "Centro",
-                        "is_toponimo": "sim",
-                        "tipo": "bairro",
-                        "localizacao": "Brasil"
-                    },
-                    {
-                        "palavra": "testando2",
-                        "is_toponimo": "nao",
-                        "tipo": "",
-                        "localizacao": ""
-                    }
-                ]
-            ]
+            "contribuicoes": []
         },
         "40": {
             "url": "https://g1.globo.com/ro/rondonia/noticia/2018/07/23/homem-persegue-esposa-com-facao-apos-vitima-voltar-de-festa-familiar-em-ro.ghtml",
@@ -2582,16 +1077,7 @@
                 "PM",
                 "Central de Polícia"
             ],
-            "contribuicoes": [
-                [
-                    {
-                        "palavra": "Zona Leste de Porto Velho",
-                        "is_toponimo": true,
-                        "tipo": "zona",
-                        "localizacao": "AC"
-                    }
-                ]
-            ]
+            "contribuicoes": []
         }
     }
 }
