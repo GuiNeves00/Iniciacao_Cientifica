@@ -66,11 +66,10 @@ window.onload = function (flag, tutorial) {
     .getElementById("check-tutorial")
     .getAttribute("data-flag");
   if (tutorial == 1) {
-    openTutorial();
+    openTutorial(1);
     dialogo.style.display = "none";
   }
 
-  console.log("valor de flag em window.onload: " + flag);
   var qntdToponimos = toponimos.length;
   var cniQntdToponimos = document.getElementById("cni-qntd-toponimos");
   cniQntdToponimos.innerHTML =
@@ -221,7 +220,6 @@ const continuar = document.getElementById("continuar");
 
 /** @param {MouseEvent} event */
 function continuarAvaliando() {
-  console.log("Clicou em Próxima Notícia");
   location.reload();
 }
 
@@ -268,14 +266,20 @@ window.addEventListener("load", () => {
 // TUTORIAL POPUP
 
 // Função para abrir o popup
-function openTutorial() {
+function openTutorial(flag) {
   var popup = document.getElementById("tutorial-popup");
   popup.style.display = "block";
+  if (flag == 1) {
+    let mensagemTutorial = document.getElementById("mensagem-tutorial");
+    let submensagemTutorial = document.getElementById("submensagem-tutorial");
+    mensagemTutorial.innerHTML = "Bem vindo!";
+    submensagemTutorial.innerHTML =
+      "Abaixo encontra-se guias sobre como utilizar o site:";
+  }
 }
 
 // Função para fechar o popup
 function closeTutorial() {
-  console.log("testeeeee");
   var popup = document.getElementById("tutorial-popup");
   popup.style.display = "none";
 }
@@ -296,7 +300,3 @@ function closeSobre() {
   var popup = document.getElementById("sobre-popup");
   popup.style.display = "none";
 }
-
-// Verifica se o usuário ja avaliou todas as noticias, atraves da flag
-// window.addEventListener("load", checkFim());
-// function checkFim() {}

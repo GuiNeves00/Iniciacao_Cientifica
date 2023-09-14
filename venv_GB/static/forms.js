@@ -1,5 +1,3 @@
-console.log("dentro do arquivo form.js");
-
 var indice = -1;
 var existingData = [];
 var indicesRR = [];
@@ -10,13 +8,11 @@ function obterIndice(event) {
   indicesRR = [];
   var valor = event.currentTarget;
   indice = toponimos.indexOf(valor);
-  console.log("INDICE: ", indice);
   for (var i = 0; i < toponimos_forms.length; i++) {
     if (toponimos_forms[i].textContent.trim() === valor.textContent.trim()) {
       indicesRR.push(i);
     }
   }
-  console.log("indicesRR: ", indicesRR);
 }
 
 const toponimos_forms = Array.from(document.querySelectorAll(".toponimo"));
@@ -27,7 +23,6 @@ if (toponimos_forms) {
 }
 
 var tamLista = toponimos_forms.length;
-// var respostasUsuario = new Array(tamLista).fill({});
 var respostasUsuario = [];
 for (var i = 0; i < tamLista; i++) {
   respostasUsuario.push({});
@@ -113,54 +108,6 @@ document
       respostasUsuario.push(novoObjeto);
     }
     indice = undefined; // Smp q usuario selecionar toponimo o valor sera alterado. Portanto garantimos que seja indefinido por padrao
-
-    console.log("respostaUsuario DOIS : ", respostasUsuario); // Verifique se as respostas do usuário estão corretas
-
-    // Envia os dados do formulário e os dados existentes como JSON
-    // fetch("/load-data")
-    //   .then(function (response) {
-    //     if (response.ok) {
-    //       return response.json();
-    //     } else {
-    //       throw new Error("Falha ao carregar dados existentes.");
-    //     }
-    //   })
-    //   .then(function (data) {
-    //     // Adicionar as novas respostas do usuário aos dados existentes
-    //     existingData = data;
-    //     console.log("EXISTING DATA: ", existingData);
-
-    //     // Enviar os dados atualizados para o servidor
-    //     return fetch("/submit-form", {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(existingData),
-    //     });
-    //   })
-    //   .then(function (response) {
-    //     if (response.ok) {
-    //       // Push the individual responses to the existingData array
-    //       existingData.push(...respostasUsuario);
-    //       console.log("EXISTING DATA: ", existingData);
-
-    //       // Send the updated data to the server
-    //       return fetch("/submit-form", {
-    //         method: "POST",
-    //         headers: {
-    //           "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify(existingData),
-    //       });
-    //     } else {
-    //       throw new Error("Ocorreu um erro ao salvar as respostas.");
-    //     }
-    //   })
-    //   .catch(function (error) {
-    //     alert(error.message);
-    //     console.log(error);
-    //   });
 
     // NOVA TENTATIVA DO EDIT
     fetch("/salvar_json", {

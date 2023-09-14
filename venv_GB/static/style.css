@@ -351,6 +351,12 @@ a proxima ira aparecer */
   font-family: "PlayfairDisplay-VariableFont_wght";
   src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
 }
+#tutorial #submensagem-tutorial {
+  color: #f8f8f2;
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  margin-bottom: 21px;
+}
 .destaque-tutorial {
   color: #50fa7b;
 }
