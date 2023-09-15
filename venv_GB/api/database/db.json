@@ -843,7 +843,28 @@
                 "Zona Oeste",
                 "Macapá"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Macapá",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Amapá",
+                        "is_toponimo": "sim",
+                        "tipo": "unidade-federativa",
+                        "localizacao": "Brasil"
+                    }
+                ]
+            ]
         },
         "30": {
             "url": "https://g1.globo.com/mg/centro-oeste/noticia/2018/07/23/corpo-e-encontrado-em-araujos-mg.ghtml",
