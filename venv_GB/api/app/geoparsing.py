@@ -2,7 +2,7 @@ import re
 from bs4 import BeautifulSoup as bs
 import polyglot
 from polyglot.text import Text, Word
-import spacy
+# import spacy
 import nltk
 from nltk.corpus import words
 
