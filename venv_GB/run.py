@@ -39,7 +39,7 @@ def evaluate():
 
 
         texto_noticia = noticia['texto']
-        toponimos = geoparsing.geoparsing(texto_noticia)
+        toponimos = geoparsing.geoparsing_nltk(texto_noticia)
         txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
     except IndexError as error:
         return render_template('evaluate.html', texto="", flag=1, tutorial=tutorial)

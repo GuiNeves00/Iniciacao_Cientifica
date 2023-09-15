@@ -726,7 +726,46 @@
                 "PM",
                 "Dmae"
             ],
-            "contribuicoes": []
+            "contribuicoes": [
+                [
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Uberlândia",
+                        "is_toponimo": "sim",
+                        "tipo": "cidade",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Segundo",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "Norte",
+                        "is_toponimo": "sim",
+                        "tipo": "zona-região",
+                        "localizacao": "Brasil"
+                    },
+                    {
+                        "palavra": "Esgoto",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    },
+                    {
+                        "palavra": "teste",
+                        "is_toponimo": "nao",
+                        "tipo": "",
+                        "localizacao": ""
+                    }
+                ]
+            ]
         },
         "25": {
             "url": "https://g1.globo.com/ro/ji-parana-regiao-central/noticia/2018/07/23/municipios-de-rondonia-se-preparam-para-extingir-lixoes-a-ceu-aberto.ghtml",
