@@ -66,7 +66,7 @@ def geoparsing_nltk(blob_text):
     return toponyms
 
 # GERAL
-def geoparsing(blob_text, option='spacy'):
+def geoparsing(blob_text, option='polyglot'):
     """
     Identifica os toponimos presentes em blob_text atraves do algoritmo escolhido por option.
     :param (blob_text): Texto a ser processado
