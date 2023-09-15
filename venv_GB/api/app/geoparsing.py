@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup as bs
 import polyglot
 from polyglot.text import Text, Word
 # import spacy
-# teste
 import nltk
 from nltk.corpus import words
 
