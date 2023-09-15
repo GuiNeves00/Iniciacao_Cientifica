@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-family: "Roboto-Black";
+  src: url("./fonts/Roboto-Black.ttf") format("truetype");
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background-color: #282a36;
+}
+
+h1 {
+  grid-column: 1;
+  grid-row: 1;
+  place-self: center;
+}
+
+button {
+  font-family: "Roboto-Black", sans-serif;
+}
+input {
+  font-family: "Roboto-Black", sans-serif;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+input:hover {
+  filter: brightness(90%);
+}
+/* Auxiliar feita para centralizar alguns 
+  elementos especificos mais facilmente */
+.centralizar {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+}
+
+.noticia {
+  display: flex;
+  align-items: center;
+  flex: 70%;
+  flex-direction: column;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+  background-color: #282a36;
+  color: #f8f8f2;
+  border-radius: 6px;
+  /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
+  flex-grow: 1;
+  font-family: "PlayfairDisplay-VariableFont_wght", sans-serif;
+}
+
+/* .texto-noticia {
+  height: 100%;
+  width: 58%;
+} */
+
+.texto-noticia {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 25px 50px;
+  background-color: #44475a;
+  color: #f8f8f2;
+  border-radius: 6px;
+  /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
+  width: 35%;
+  margin: 50px 0px;
+  flex-grow: 0; /* antes 1 */
+  font-family: "PlayfairDisplay-VariableFont_wght", sans-serif;
+}
+
+.sidebar {
+  flex: 10%;
+  position: sticky;
+  top: 0;
+  right: 0;
+  /* width: 320px; */
+  overflow-y: auto; /* Adiciona rolagem à sidebar */
+  background-color: #44475a;
+  padding: 20px;
+  padding-top: 12px;
+  box-shadow: -10px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+}
+.sidebar h2 {
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+}
+
+.sidebar button {
+  background-color: #6272a4;
+  color: #f8f8f2;
+  border-color: #6272a4;
+}
+.sidebar label {
+  color: #f8f8f2;
+}
+
+.toponimo:hover {
+  filter: brightness(85%);
+}
+.toponimo {
+  color: #f8f8f2;
+  background-color: #bd93f9;
+  border-radius: 6px;
+  padding: 1px;
+}
+
+#top-display {
+  display: inline-block;
+  text-align: center;
+  background-color: #6272a4;
+  color: #f8f8f2;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+#submit {
+  font-size: 16px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 0px solid;
+  margin: 10px;
+  color: #282a36;
+  background-color: #f8f8f2;
+}
+
+#pergunta-1,
+#pergunta-2,
+#pergunta-3 {
+  padding: 10px 0px;
+}
+
+/* perguntas escondidas por padrao,
+apos usuario responder a antecedente
+a proxima ira aparecer */
+#pergunta-2,
+#pergunta-3,
+#pergunta-1 {
+  display: none;
+}
+
+#novo-toponimo-div {
+  color: #f8f8f2;
+  background-color: #6272a4;
+  text-align: center;
+  border-radius: 8px;
+  padding: 6px;
+  margin-top: 20px;
+}
+
+#continuar-sair {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  gap: 10px;
+}
+
+#continuar-sair button {
+  font-size: 18px;
+  height: 60px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 0px solid;
+  text-align: center;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+#confirmar-noticia-inedita {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #44475a;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#confirmar-noticia-inedita p {
+  margin: 0;
+  color: #f8f8f2;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+#confirmar-noticia-inedita button {
+  padding: 10px 20px;
+  border: none;
+  margin: 10px 0px;
+  background-color: #6272a4;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 50px;
+  width: inherit;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 99; /* garantir que a header fica acima dos outros elementos (exceto sidebar) */
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 190px;
+  height: 50px;
+  background-color: #44475a;
+  margin-bottom: 25px;
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5); /* sombra na parte debaixo do header p1 */
+}
+/* sombra na parte de baixo do header p2 */
+#header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+}
+#header button {
+  background-color: #6272a4;
+  color: #f8f8f2;
+  border: 0px solid;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 30px;
+  padding: 5px 10px;
+  margin: 10px 0px;
+}
+
+/* Estilo para o popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  overflow: auto; /* disponibilizar scroll */
+  backdrop-filter: blur(3px);
+}
+
+.popup-content {
+  position: relative; /* antes absolute */
+  background-color: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 100px auto; /* margem pra ajudar a centralizar o popup */
+}
+.popup-content li {
+  color: #f8f8f2;
+}
+/* Estilo para imagens dentro do tutorial */
+.popup-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid #f8f8f2;
+  border-radius: 5px;
+}
+
+.close-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2; /* aumentar o z-index pra garantir que está acima/sobrepondo o popup*/
+  padding: 30px;
+}
+
+.close-icon {
+  font-size: 36px; /* tamanho do ícone */
+  color: #ff5555;
+}
+
+#download-popup .popup-content p {
+  color: #f8f8f2;
+}
+#download-popup .popup-content button {
+  background-color: #6272a4;
+  color: #f8f8f2;
+  border: 0px solid;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+#sobre-popup p {
+  color: #f8f8f2;
+}
+
+#sobre-popup a {
+  color: #bd93f9;
+  text-decoration: italic;
+}
+
+#tutorial {
+  text-align: center;
+}
+#tutorial ul {
+  list-style-type: none;
+  padding: 0;
+}
+#tutorial li {
+  margin: 10px 0;
+}
+#tutorial strong {
+  color: #bd93f9;
+}
+#tutorial h1 {
+  color: #50fa7b;
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+#tutorial #submensagem-tutorial {
+  color: #f8f8f2;
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  margin-bottom: 21px;
+}
+.destaque-tutorial {
+  color: #50fa7b;
+}
+summary {
+  font-family: "PlayfairDisplay-VariableFont_wght";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  color: #f8f8f2;
+  font-size: 1.5em; /* Tamanho da fonte semelhante a um cabeçalho h3 */
+  font-weight: bold; /* Deixando o texto em negrito */
+  margin: 0; /* Removendo margens para um espaçamento mais próximo ao conteúdo */
+}
+
+details {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  outline: none;
+}
+
+/* Estilo quando o <details> está aberto */
+details[open] summary {
+  border-bottom: 1px solid #333; /* Adicionando uma linha horizontal quando está aberto */
+}
+
+/* Estilo quando o mouse passa por cima */
+summary:hover {
+  text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+}
