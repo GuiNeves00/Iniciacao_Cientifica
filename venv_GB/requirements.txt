@@ -44,3 +44,4 @@ wasabi
 wcwidth
 Werkzeug
 zipp
+gunicorn==21.2.0
