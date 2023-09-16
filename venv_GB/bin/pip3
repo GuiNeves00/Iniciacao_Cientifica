@@ -1,4 +1,4 @@
-#!/home/guilherme/VSC/IC/GeoBases/venv_GB/bin/python
+#!/home/guilherme/VSC/IC/GeoBases/venv_GB/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
