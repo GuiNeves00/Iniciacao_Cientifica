@@ -5,7 +5,8 @@ from pathlib import Path
 import json
 from collections import OrderedDict
 import random
-# from app import scrap #descomentar faz com q popule o db novamente
+from app import scrap
+
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -24,15 +25,17 @@ formData = {}
 
 @app.route('/')
 def home():
+    # Esta rota so eh acessivel quando um "novo" usuario acessa o site pela primeira vez (ou manualmente, adicionando / na url). Portanto, sempre que um "novo" usuario acessar o site, sera realizada uma tentativa de adicionar novos dados ao BD, fazendo-o caso o RSS tenha sido atualizado.
+    scrap.scrap_and_populateDB()
     return redirect(url_for('evaluate'))
 
 @app.route('/evaluate')
 def evaluate():
     try:
         if len(lista_noticias) == len(list(range(1, db_size + 1))):
-            tutorial = 1;
+            tutorial = 1
         else:
-            tutorial = 0;
+            tutorial = 0
         noticia_avaliar = random.choice(lista_noticias)
         lista_noticias.remove(noticia_avaliar)
         noticia = db.get_data(noticia_avaliar)

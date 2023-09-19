@@ -81,103 +81,15 @@ def obtem_textos_g1(links_noticias):
 
 
 #TODO a ideia é criar uma "rotina" que vai executar este arquivo scrap.py a cada X tempo. Tenho que verificar se existe a necessidade de criar uma verificação aqui que verifique se já existe uma instância do BD, se sim, não instanciar novamente (db=Database(db_path)). Cogitar fazer essa verificação com uma simples 'flag'. No momento, (acreidto que) estou apenas sobrescrevendo a instância, não sei se isso pode acarretar em um problema.
-db_path = Path(__file__).resolve().parent.parent / 'database' / 'db.json'
-db = Database(db_path)
 
-links_noticias = obtem_links_g1()
-db.populate_DB(links_noticias, obtem_pubdate_g1(), obtem_textos_g1(links_noticias))
-#!obs: antes chamava as funcoes do scrap dentro populateDB no database.py
+def scrap_and_populateDB():
+    db_instance_exists = 'db' in locals() or 'db' in globals()
+    db_path = Path(__file__).resolve().parent.parent / 'database' / 'db.json'
+    if not db_instance_exists:
+        db = Database(db_path)
+
+    links_noticias = obtem_links_g1()
+    db.populate_DB(links_noticias, obtem_pubdate_g1(), obtem_textos_g1(links_noticias))
 
 # db = database.createDB()
 # database.populate_DB(db)
-
-#TODO: essa abordagem tem um problema. quando executar a "rotina" as variaveis usadas para nomear o arquivo vao ser resetadas, assim impedindo de criar novos arquvios.
-    #Brainstorm de consertos:
-        # Adicionar ao BD ao final desta função. Assim sendo necessário, no momento da adição, atribuir um identificador para a notícia, que será usado para verificar em futuras adições se esta noticia já não está presente no BD.
-# def gerar_JSON():
-#     links = obtem_links_g1()
-#     pubdates = obtem_pubdate_g1()
-#     textos = obtem_textos_g1(links)
-   
-#     for i, (link, pubdate, texto) in enumerate(zip(links, pubdates, textos), 1):
-#         dados = {
-#             "url": link,
-#             "pubdate": pubdate,
-#             "titulo": i,
-#             "subtitulo": i,
-#             "texto": texto,
-#             "NLP": i,
-#             "contribuicoes": i
-#         }
-#         nome_arquivo = f"/home/guilherme/VSC/IC/GeoBases/venv_GB/app/noticias/noticiaG1_{i}.json"
-
-#         if not os.path.exists(nome_arquivo):
-#             with open(nome_arquivo, 'w') as arquivo:
-#                 json.dump(dados, arquivo, ensure_ascii=False, indent=4)
-
-
-# #TODO: Algma condição deve ser satisfeita para que a função seja executada. Acredito que terá algo haver com "rotina"
-# if True:
-#     gerar_JSON()                
-
-
-# def escrever_JSON(id="", urls="", pubdates="", titulos="", subtitulos="", textos=""):
-#     try:
-#         with open('app/data.json', 'r') as dataJSON:
-#             arquivo = json.load(dataJSON)
-#     except (FileNotFoundError, json.JSONDecodeError):
-#         arquivo = []
-    
-#     # Cria o id para cada noticia e escreve o url de cada
-#     if urls != "":
-#         for link in urls:
-#             if not any(arq["url"] == link for arq in arquivo):
-#                 obj = {
-#                     "id": len(arquivo),
-#                     "url": link,
-#                     "pubdate": pubdates,
-#                     "titulo": titulos,
-#                     "subtitulo": subtitulos,
-#                     "texto": textos
-#                 }
-#                 arquivo.append(obj)
-    
-#     # Escreve as pubdates
-#     if pubdates != "":
-#         teste = encontrar_objeto_por_id(id, arquivo)
-#         if teste:
-#             teste['pubdate'] = pubdates
-    
-#     # Escreve os dados
-#     with open('app/data.json', 'w') as f:
-#         json.dump(arquivo, f, indent=4, ensure_ascii=False)
-
-#     return
-
-# # Percorre o arquivo JSON ate encontrar o objeto com id
-# # passado por parametro, retornando-o
-# def encontrar_objeto_por_id(id, data):
-#     for objeto in data:
-#         if objeto['id'] == id:
-#             return objeto
-#     return None
-    
-
-
-
-#FIXME nao esta salvando as novas noticias do rss
-# def salvar_texto_json(textos):
-#     noticias = []
-#     try:
-#         with open('noticias.json', 'r') as f:
-#             noticias = json.load(f)
-#     except (FileNotFoundError, json.JSONDecodeError):
-#         pass
-
-#     for i, texto in enumerate(textos):
-#         nova_noticia = {"id": i, "texto": texto}
-#         if not any(noticia["id"] == i for noticia in noticias):
-#             noticias.append(nova_noticia)
-
-#     with open('noticias.json', 'w') as f:
-#         json.dump(noticias, f, indent=4, ensure_ascii=False)
