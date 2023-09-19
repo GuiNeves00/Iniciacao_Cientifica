@@ -5,7 +5,7 @@ from pathlib import Path
 import json
 from collections import OrderedDict
 import random
-# from app import scrap #descomentar faz com q tente popular o db novamente
+# from app import scrap #descomentar faz com q popule o db novamente
 
 app = Flask(__name__, static_url_path='/static')
 
