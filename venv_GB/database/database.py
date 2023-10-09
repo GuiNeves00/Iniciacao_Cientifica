@@ -37,7 +37,7 @@ class Database:
                 "titulo":titulo,
                 "subtitulo": subtitulo,
                 "texto": texto,
-                "NLP": geop.geoparsing_nltk(texto),
+                "NLP": geop.geoparsing_spacy(texto),
                 "contribuicoes": []
             }
 
