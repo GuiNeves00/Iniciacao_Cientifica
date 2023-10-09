@@ -26,7 +26,7 @@ formData = {}
 @app.route('/')
 def home():
     # Esta rota so eh acessivel quando um "novo" usuario acessa o site pela primeira vez (ou manualmente, adicionando / na url). Portanto, sempre que um "novo" usuario acessar o site, sera realizada uma tentativa de adicionar novos dados ao BD, fazendo-o caso o RSS tenha sido atualizado.
-    # scrap.scrap_and_populateDB()
+    scrap.scrap_and_populateDB()
     return redirect(url_for('evaluate'))
 
 @app.route('/evaluate')
@@ -42,17 +42,10 @@ def evaluate():
 
 
         texto_noticia = noticia['texto']
-        toponimos = geoparsing.geoparsing_spacy(texto_noticia)
+        toponimos = geoparsing.geoparsing_nltk(texto_noticia)
         txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
     except IndexError as error:
         return render_template('evaluate.html', texto="", flag=1, tutorial=tutorial)
-
-    # links = scrap.obtem_links_g1()
-    # pubdates = scrap.obtem_pubdate_g1()
-    # textos = scrap.obtem_textos_g1(links)
-
-    # toponimos = geoparsing.geoparsing_spacy(textos[1])
-    # txt_exibir = geoparsing.processar_txt(textos, toponimos)
         
     return render_template('evaluate.html', texto=txt_exibir, id_noticia_avaliada=noticia_avaliar, flag=0, tutorial=tutorial)
 

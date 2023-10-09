@@ -343,7 +343,7 @@ a proxima ira aparecer */
 #tutorial li {
   margin: 10px 0;
 }
-#tutorial strong {
+.guia-rapido strong {
   color: #bd93f9;
 }
 #tutorial h1 {
@@ -386,4 +386,15 @@ details[open] summary {
 /* Estilo quando o mouse passa por cima */
 summary:hover {
   text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+}
+
+.guia-toponimos h3 {
+  color: #bd93f9;
+}
+.guia-toponimos p {
+  margin-bottom: 20px;
+  color: #f8f8f2;
+}
+.guia-toponimos ul strong {
+  color: #50fa7b;
 }
