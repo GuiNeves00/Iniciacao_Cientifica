@@ -15,12 +15,10 @@ def obtem_links_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
 
     # Obtem os links das noticias
     for link in rss_bs.find_all("guid"):
-        if len(links_noticias) >= 1:
+        if len(links_noticias) >= 5:
             return links_noticias
         links_noticias.append(link.get_text())
     
-    # Escreve no JSON o url de cada noticia
-    # escrever_JSON(urls=links_noticias)
     return links_noticias
 
 def obtem_pubdate_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
@@ -32,7 +30,8 @@ def obtem_pubdate_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
     ids = 0 # utilizado para buscar o id correspondende no JSON
     # obtem pubdate das noticias e escreve no JSON
     for pubdate in rss_bs.find_all("pubdate"):
-        # escrever_JSON(id=ids, pubdates=pubdate.get_text())
+        if len(pubdates) >= 5:
+            return pubdates
         ids += 1
         pubdates.append(pubdate.get_text())
 
