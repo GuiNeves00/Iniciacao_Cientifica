@@ -15,6 +15,8 @@ def obtem_links_g1(rss_link="https://g1.globo.com/rss/g1/brasil/"):
 
     # Obtem os links das noticias
     for link in rss_bs.find_all("guid"):
+        if len(links_noticias) >= 10:
+            return links_noticias
         links_noticias.append(link.get_text())
     
     # Escreve no JSON o url de cada noticia
