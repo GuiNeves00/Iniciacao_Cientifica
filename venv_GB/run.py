@@ -36,13 +36,13 @@ def evaluate():
             tutorial = 1
         else:
             tutorial = 0
+
         noticia_avaliar = random.choice(lista_noticias)
         lista_noticias.remove(noticia_avaliar)
         noticia = db.get_data(noticia_avaliar)
 
-
         texto_noticia = noticia['texto']
-        toponimos = geoparsing.geoparsing_nltk(texto_noticia)
+        toponimos = geoparsing.geoparsing_polyglot(texto_noticia)
         txt_exibir = geoparsing.processar_txt(texto_noticia, toponimos)
     except IndexError as error:
         return render_template('evaluate.html', texto="", flag=1, tutorial=tutorial)
