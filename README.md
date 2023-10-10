@@ -8,7 +8,7 @@ Especificação = https://drive.google.com/file/d/1WWIBWBJRM-ZoBJ5MkdQrHgCUpnKmF
 Relatório Final = 'WIP'
 
 ## Versões -- Como usar
-Por conta de limitações do plano gratuito do host, foram geradas duas versões do projeto.
+Por conta de limitações do plano gratuito do host, foram geradas duas versões do projeto. As diferenças entre as versões estam especificadas no Relatório Final.
 
 ### Versão Hospedada
 Basta acessar o link:
