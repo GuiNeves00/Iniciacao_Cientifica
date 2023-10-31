@@ -5,7 +5,7 @@
 ## Sobre o Projeto
 Especificação = https://drive.google.com/file/d/1WWIBWBJRM-ZoBJ5MkdQrHgCUpnKmFMPw/view?usp=sharing
 
-Relatório Final = 'WIP'
+Relatório Final = https://drive.google.com/file/d/1haRmzd4OaL-SgPZ9T558Ia0rgl67z5Ih/view?usp=sharing
 
 ## Versões -- Como usar
 Por conta de limitações do plano gratuito do host, foram geradas duas versões do projeto. As diferenças entre as versões estão especificadas no Relatório Final.
